@@ -1,0 +1,42 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The negotiation has just begun (t=0.0). As a first move, I am proposing my most preferred outcome to anchor the negotiation and signal my priorities. I've selected the highest utility value for each issue."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just started (t=0.02). The opponent's first offer provides me with very low utility (around 0.27), indicating conflicting preferences. To signal a cooperative spirit while protecting my top priorities (issue C and D), I will make a small concession on issue A and issue D, keeping my overall utility above 0.87."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The negotiation has just begun (t=0.04) and the opponent has repeated their opening offer, signaling they are holding firm. Since my most important issues are issueC and issueD, I will maintain high utility on these by requesting my top value for issueC and issueD. To demonstrate a willingness to negotiate, I will make a slight concession on issueA and issueB, which have the lowest importance weights for me, proposing values that still yield decent utility."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is repeating their opening offer which brings me very low utility (under 0.3). Since it is still extremely early in the negotiation (t=0.06), I have no reason to concede heavily. I am making another high-utility offer by proposing my second-best value for my most important issue (issueC), while retaining top values for other important issues to probe for acceptable compromises."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The negotiation is still in its very early stages (t=0.08), and the opponent has repeatedly held firm on the same offer that yields me very low utility. Because my most heavily weighted issues are issueC and issueD, I will hold firm on high-utility values for these (valueC and valueD) while continuing to explore alternative combinations for my lower-weighted issues (issueA and issueB), aiming to uncover a compromise that satisfies the opponent without significantly impacting my overall score."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "In the latest offer, the opponent conceded heavily on issueA and issueB, proposing valueC for both, which aligns well with my preferences and offers me high utility on those low-weight issues. I will accept their proposal on issueA and issueB to show goodwill, but I will hold very firm on my most important issues (issueC and issueD), keeping them at valueC since time pressure is still low (t=0.1). This maintains a high overall utility target for this round while making a partial compromise."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent has made a significant concession on my most critical issue (issueC), offering valueD, as well as on issueA (valueD). I will match these two values (issueA: valueD, issueC: valueD) to reinforce this progress. To maintain a strong overall utility early in the negotiation, I will counter by requesting favorable values for issueB (valueC) and issueD (valueC), aiming for an overall utility of ~0.87."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent's latest offer yields a moderate utility of around 0.645, largely because they demand my lowest-utility values for issueB (valueA) and issueD (valueB). Since it is still extremely early in the negotiation (t=0.14), I will reject this and propose a counter-offer that integrates their concessions on issueA (valueD) and issueC (valueD). I will vary my demands on issueB (valueB) and issueD (valueD) to find combinations that may suit them better without prematurely sacrificing my own utility on high-importance issues."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent's latest offer provides my maximum utility for both of my most important issues (issueC and issueD), offering me an outstanding total utility of 0.86 early in the negotiation. Realizing this represents a highly favorable outcome, I am choosing to accept their exact offer rather than risk losing it over marginal gains on the minor issues."
+    }
+  ]
+}

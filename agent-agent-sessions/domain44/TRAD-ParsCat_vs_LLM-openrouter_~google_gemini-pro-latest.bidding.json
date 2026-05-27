@@ -1,0 +1,42 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The negotiation has just begun (t=0.0). I will propose my maximum utility values for the issues where our preferences diverge (issues A, B, C, and F). The opponent's opening offer included valueB for issueD and valueA for issueE, both of which happen to yield me maximum utility for those issues, so I will adopt them to show collaborative intent without sacrificing my own utility, yielding a package of 1.0 total utility."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just begun, and the opponent has already suggested values that are highly favorable to me on several issues: `valueA` for `issueA`, `valueB` for `issueD`, `valueA` for `issueE`, and `valueA` for `issueF`. I will include all of these optimal values in my counteroffer. To show some willingness to negotiate, I will slightly concede on `issueB` by proposing `valueA` instead of my top choice, still maintaining an exceptionally high overall utility."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The current time is very early (t=0.04), so I will maintain a high-utility posture while gradually making concessions on lower-weight issues. The opponent consistently insists on `issueB: valueC`, which gives me very low utility, so I will hold firm on `issueB: valueB`. I'll match their recent offers on `issueA: valueA`, `issueD: valueA`, and concede slightly on `issueE` to `valueB` to show flexibility and move closer to an agreement."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent reverted to their initial and highly unfavorable offer, signaling resistance. However, it's very early in the negotiation (t=0.06), so I will maintain a firm stance on my most heavily weighted issues while attempting minor concessions on less critical issues to discover the opponent's true preferences. I will match their latest offer's values for issueD (valueB) and issueE (valueA) to demonstrate flexibility and build goodwill while targeting a high overall utility > 0.96."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "We are extremely early in the negotiation (t=0.08) and the opponent is testing different combinations. Notably, they recently switched to requesting `valueA` for `issueD`, an option that yields identical maximum utility for me as `valueB` (both 1.0). I will incorporate this cost-free concession while maintaining high-utility values on all other issues, remaining firm to maximize overall value this early in the game."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The current time is early (t=0.10), so I need to maintain a high utility. The opponent's offers have been consistently low-utility for me, favoring 'valueC' across multiple issues, although they have occasionally proposed 'valueB' for issueE and 'valueA' for issueD. I will offer a combination with high utility for me (>0.95) that incorporates 'valueB' for issueE and 'valueA' for issueD to see if this matches any of their underlying preferences."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The negotiation is still early (t=0.12), so I will maintain a high utility threshold (above 0.9). The opponent has shown they are heavily interested in `issueD: valueA`, `issueE: valueA`, and `issueF: valueC`. Since `issueD: valueA` and `issueE: valueA` yield maximum utility for me, I'll include them, and I'll soften my stance on `issueF` to `valueC` to test if that brings us closer to an agreement without overly sacrificing my own utility, given `issueF` has a low weighting."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The negotiation is still in the early phase (time_fraction = 0.14), allowing me to maintain strict standards and pursue near-maximum utility (around 0.98). The opponent repeatedly asks for `valueC` on my highest-priority issues (issueA, issueB, issueC), indicating conflicting priorities, but they seem to readily accept `valueA` on issueD and issueE. I will present a new combination by conceding slightly on issueA to see if `valueB` appeals to them, while remaining firm on my optimal values for most other issues."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent's most recent offer yields a utility of 0.92 for me, giving me my most preferred values on all issues except issueF. Since this is an exceptionally high utility, I am echoing their exact offer to secure an immediate agreement and lock in this near-optimal distribution."
+    }
+  ]
+}

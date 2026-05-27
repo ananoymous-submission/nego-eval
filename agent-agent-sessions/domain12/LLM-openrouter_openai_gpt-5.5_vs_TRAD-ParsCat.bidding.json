@@ -1,0 +1,30 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.0 this is the opening offer, so I am targeting maximum utility and do not need to concede yet. There is no opponent offer or message history to infer preferences, so I will start with my highest-value bid across all issues."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "I am targeting a very high-utility bid because it is still the very start of the negotiation (t=0.02), and the opponent’s only offer was the all-valueA bid, which is very poor for me and shows no concession yet. To avoid simply repeating my opening bid, I make a small concession on a low-weight issue while holding firm on the higher-weight issues, especially issueF, issueE, issueC, and issueD."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting a very high-utility bid because it is still very early at t=0.04 and the opponent has not conceded at all, offering only all valueA bids that are poor for me. To avoid repeating my previous exact bid while making a small concession, I am only relaxing a low-weight issue and holding firm on the high-importance issues C, D, E, and especially F."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am still targeting a high-utility bid because it is very early (t=0.06), while making a small concession on a low-weight issue to avoid stalemate. The opponent has repeatedly offered all valueA and has not conceded, so I will hold firm on my highest-weight issues, especially issueF, while testing whether a concession on issueA helps."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am still targeting a high-utility bid because it is very early in the negotiation (t=0.08), and the opponent has not conceded at all, repeatedly offering all valueA. To avoid repeating my last bid while still conceding only on a low-weight issue, I am offering valueA on issueB but holding valueC on the higher-importance issues C, D, E, and F."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a high-utility bid around 0.94 by conceding only on my two lowest-weight issues, issueA and issueB, while holding valueC on the more important issues C, D, E, and F. Since time is still early at t=0.10, there is no need to match the opponent’s latest concessions on high-weight issues; however, their move from all valueA to including valueC/valueB suggests some willingness to improve."
+    }
+  ]
+}

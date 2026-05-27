@@ -1,0 +1,22 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening bid, so I should start with my maximum utility offer. My top values are: issueF (valueC, weight 0.3), issueE (valueA, weight 0.2), issueB (valueC, weight 0.2), issueA (valueC, weight 0.1), issueC (valueC, weight 0.1), issueD (valueB, weight 0.0). This gives me utility of 1.0 across all weighted issues. Starting strong at t=0 is appropriate since there's no time pressure yet."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent's offer gives me utility: issueA(valueA)=0.066, issueB(valueB)=0.07, issueC(valueA)=0.02, issueD(valueB)=0, issueE(valueA)=0.2, issueF(valueA)=0.06 ≈ 0.416, which is quite low. We're very early (t=0.02), so I should stay close to my optimal bid. The opponent seems to prefer valueA for most issues, especially issueF where my weight is highest. I'll hold firm on my top priorities (issueF=valueC, issueE=valueA, issueB=valueC) but can slightly adjust lower-weight issues to signal willingness to negotiate."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent has made the same offer twice (issueA: valueA, issueB: valueB, issueC: valueA, issueD: valueB, issueE: valueA, issueF: valueA), showing they're holding firm early. Their offer gives me utility: 0.1*0.66 + 0.2*0.35 + 0.1*0.20 + 0.0*1.0 + 0.2*1.0 + 0.3*0.20 = 0.066 + 0.07 + 0.02 + 0 + 0.2 + 0.06 = 0.416. It's very early (t=0.04), so I should stay near my optimal bid but make a small concession. I'll try conceding on issueD (weight 0.0) and issueA (low weight), while holding firm on issueF (highest weight) and issueE (high weight). I'll slightly adjust issueC to valueB to signal movement."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is consistently offering issueA: valueA, issueB: valueB, issueC: valueA, issueD: valueB, issueE: valueA, issueF: valueA. Their utility to me is: 0.1*0.66 + 0.2*0.35 + 0.1*0.20 + 0.0*1.00 + 0.2*1.00 + 0.3*0.20 = 0.066 + 0.07 + 0.02 + 0 + 0.2 + 0.06 = 0.416. It's very early (t=0.06), so I should stay near my top utility. The opponent seems to care a lot about issueF (always valueA) and issueB (always valueB). My top priority is issueF (weight 0.3) where I want valueC, so I'll hold firm there. I can try conceding on issueC (low weight 0.1) and keep issueA at valueC to vary my bid slightly."
+    }
+  ]
+}

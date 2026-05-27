@@ -1,0 +1,190 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The negotiation has just started, and the opponent's opening offer gives me my minimum possible utility across all issues, despite their message claiming it is a fair outcome. At this early stage, I will put forward an offer that maximizes my own utility to establish a strong opening position. This allows us room to negotiate and find actual common ground as time progresses."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent is repeating their opening offer which provides me with the absolute minimum utility while sending emotional messages claiming fairness. Given that we are extremely early in the negotiation (t=0.02), I will not make drastic concessions. I will instead make a small, measured concession on my lower-weight issues (issueC and issueD) to demonstrate a willingness to negotiate while securing a very high utility for myself."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The current time is very early (t = 0.04), so I should keep my target utility high. The opponent's natural language messages are filled with emotional appeals, but their actual offers have barely moved from their opening position, showing only a minimal shift from valueF to valueE on issueA. In response, I will maintain firm positions on my highest-weight issues (issueA and issueB) while making a minor concession on my lowest-weight issue (issueD) to signal a willingness to negotiate without giving up significant utility."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is pairing highly emotional and cooperative-sounding messages with extremely selfish offers, having barely moved from their initial lowest-utility bid. Given that we are still very early in the negotiation (t=0.06), I will ignore the opponent's cheap talk and continue to make small, systematic concessions on my lowest-importance issues (issueC and issueD) while holding firm on my highest-importance issues (issueA and issueB). This maintains my utility well above 0.9 and tests if the opponent is willing to reciprocate with genuine concessions."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent is pairing emotional appeals with highly unbalanced offers that would yield me near minimum utility. Since the time fraction is still very early (t=0.08), I will maintain my top values on my most important issues (issueA and issueB), while continuing to make steady, incremental concessions on my lower-weighted issues (issueC and issueD) to signal a willingness to compromise."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The current time is early (t=0.1), so I will hold firm on my highest-priority issues (issueA and issueB). Although the opponent claims to be \"meeting me halfway,\" their actual offers provide very low utility, primarily improving issueA slightly to valueD only. I'll make a minor concession on my lowest-priority issue (issueD) while maintaining my stance on the others to signal that significant mutual compromises are still required."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The current time is early (t=0.12), so my priority is to hold firm on my most important issues (issueA and issueB) while exploring concessions on my least important ones. The opponent's offers are highly favorable to themselves (mostly F values) with only minor, rotating concessions. I will concede issueD to valueF, accommodating their consistent demand for that issue, while maintaining high utility on issueA, issueB, and issueC."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The negotiation is still in the early stages (t=0.14), but the opponent continues to offer very low utility values (F on almost all issues) while making emotional appeals. I will ignore the messages as cheap talk and rely on the actual bid values. To signal a willingness to compromise and explore their preferences, I will make my first small concession on issueB (from valueA to valueB), while holding firm on my most important issue (issueA) and maintaining my previous values on issueC and issueD."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent is consistently using emotional appeals as a tactic, which I will treat as cheap talk. However, their actual bids reveal that they are willing to concede significantly on issueA (now offering valueC), which is my most important issue (weight 0.4). This indicates they may value issueA less. I will hold firm on issueA to maximize my utility, while making slight concessions on issueC and issueD to keep the negotiation progressing toward an agreement, keeping my overall utility around 0.79."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent continues to attach highly emotional \"cheap talk\" to their offers while making very minimal concessions, mainly bouncing between valueE and valueF for most issues, and occasionally dropping to valueC or valueD. Since we are still early in the negotiation (t=0.18), I will maintain a firm stance on my most important issue (issueA) and offer minor concessions on the lower-weighted issues (issueC and issueD) to keep my utility around 0.80 while exploring for mutual overlap. I am ignoring the emotional messages and solely tracking their bidding actions."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent's messages rely heavily on emotional appeals, which I will treat as cheap talk. However, looking at their offer history, they are gradually conceding on issueA (moving from valueF to valueB) while staunchly holding onto valueF for the other issues. Since it is still early in the negotiation (t=0.2), I will protect my top priorities (issueA and issueB), where I hold the most utility, and show continued flexibility by making a minor concession on issueD."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has made a significant concession on issueA by offering `valueA`, which holds my highest utility (0.4 weight). I will lock in this value and reciprocate their goodwill by giving them `valueF` on issueD, which appears to be their preferred value based on their persistent requests. I will maintain moderately high values on issueB and issueC since it is still early in the negotiation (t=0.22)."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "I am targeting a utility of around 0.77. The opponent's messages consist of generic emotional appeals which I am treating as cheap talk, but their bidding history provides valuable signals. Notably, at t=0.22, they offered `valueA` for `issueA` (my highest-weight issue), showing they can concede on it. Knowing this, I will firmly hold onto `valueA` for `issueA` and maintain a high value for `issueB`, while offering slight concessions on my lower-weight issues (`issueC` and `issueD`) to draw them back toward an agreement that favors my priorities."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent's emotional messages are evident \"cheap talk\" aiming to persuade me to accept low value offers, but their actual bid history shows they are willing to concede significantly on issueA (offering up to valueA and valueB). Since issueA brings me the most value, I will hold firm on valueA there, along with an upper-tier value for my second-most important issue, issueB. I will continue to make minor concessions on my low-weight issues (issueC and issueD) to find common ground while keeping my total utility well above 0.75, which is appropriate for the early-to-mid negotiation phase."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's messaging relies heavily on emotional appeals and guilt-tripping, which I will ignore as cheap talk. Focusing on the numbers, the opponent eventually conceded to my top value on my most important issue (A:A at t=0.22), indicating they likely have lower weight on issueA. We are still relatively early in the negotiation (t=0.28), so I will hold firm on issueA and issueB, while making minor concessions on issueC and my lowest-weight issueD to signal flexibility."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent's messages are highly emotional and repetitive, claiming \"real sacrifices,\" which I will disregard as cheap talk since their bids still largely favor them (centering on valueF). However, their recent bids show a willingness to concede on issueA and issueC. Since we are still early in the negotiation (t=0.3), I will maintain my top value for my most important issue (issueA) and make a minor concession on issueB (my second most important issue, dropping to valueC) while offering moderate values for issueC and issueD, maintaining a strong overall utility for myself."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "We are still early-to-mid in the negotiation (t=0.32). The opponent's messages rely heavily on emotional appeals framing their offers as sacrifices, but their history shows they are willing to explore different compromises, having offered 'valueA' and 'valueB' on issueA and recently 'valueD' on issueD. I will lock in my most critical issues (issueA and issueB) at high utilities, while adopting their recent issueD proposal ('valueD') and previous issueC proposal ('valueE') to see if this combination aligns with their preferences without sacrificing my own target utility."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The current time is relatively early (t=0.34) so I have room to negotiate without accepting low-utility deals. The opponent's message history consists of emotional appeals which I treat as cheap talk, but the substance of their offers reveals periodic concessions on my most important issues, issueA and issueB, suggesting they value my lower-priority issues (issueC and issueD) highly. I will hold firm near my top utilities on A and B, while offering significant concessions on C and D to see if we can find a mutually agreeable tradeoff."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent's messages consist of repetitive emotional appeals and claims of fairness, which act as cheap talk. I will ignore these and focus on the bidding behavior. The opponent has recently conceded issue B to `valueB` and previously conceded issue A to `valueA`. Since issueA and issueB carry my highest weights (0.4 and 0.3), I will hold firm on them. I will concede entirely on my lowest priority, issueD, offering `valueF` as they have consistently requested, while holding issueC at `valueE` to keep my utility well above 0.70 at this fairly early stage (t=0.36)."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent continues using emotional appeals and varied concessions across issues to fish for compromises. Since we are still in the early-mid game (t=0.38), I need to hold firm on my highest-weight issues (issueA and issueB) while being flexible on the lower-weight ones (issueC and issueD). I'm offering 'valueA' for issueA and 'valueB' for issueB to secure my core utilities, while incorporating the opponent's recent acceptable values for issueC ('valueE') and issueD ('valueD') to signal cooperation."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent is relying heavily on dramatic emotional appeals without making substantial concessions on my highest-priority issues. Since we are at t=0.40, I am not in a rush, but I recognize the opponent's strong preference for 'valueB' on issueB and 'valueF' on everything else based on their recent patterns. I will offer a combination that secures my most valuable issues (issueA and issueB) while giving the opponent their likely preferred value (valueF) on my less critical issueC, maintaining my utility above 0.74."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "The opponent's repetitive emotional appeals are recognized as non-binding negotiation tactics and will be ignored in favor of analyzing their bid history. They have increasingly conceded on issueA and issueB while remaining rigidly anchored to valueF on issueC and issueD. Since issueA and issueB carry my highest utility weights (0.4 and 0.3), I will hold firm on them (maintaining valueA and valueB) but concede issueC to valueF, testing valueC on issueD to keep my utility target around 0.76 as we approach the mid-game."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "The opponent's messages rely heavily on emotional appeals (\"straight from the heart\") which is cheap talk that I ignore in favor of actual bid values. At t=0.44, I will continue to defend my highest-weighted issues (issueA and issueB) with top values while making concessions on the lower-weighted issues (issueC and issueD). I am proposing valueE for issueC and matching the opponent's recent valueC for issueD to offer a workable trade-off, netting myself a strong utility around 0.79."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent's messages rely heavily on emotional appeals and fabricated urgency, which I will treat as cheap talk. However, their actual bids show they are willing to concede on my high-weight issues (issueA and issueB), having recently grouped them at valueB. Since we are approaching the mid-game (t=0.46), I will hold firm on valueA for issueA and valueB for issueB to secure my highly weighted utility, and make a small concession on my lowest-weight issue (issueD), keeping my total utility around 0.77."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "The opponent is relying on emotional appeals (\"straight from the heart\") without offering mutually beneficial compromises, occasionally shifting concessions across different issues (like newly offering valueB on issueC). To maintain my expected utility near 0.77 while giving them a different permutation to consider, I will offer a combination that retains high value on my top issues (A and B) but shifts some flexibility toward their recent movements on issueC at the expense of issueD. Time pressure (t=0.48) is moderate, so I am not rushing to finalize an agreement below my midway targets yet."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "At t=0.5, we are at the midpoint of the negotiation. I will target a utility around 0.73 to continue making steady concessions. The opponent's messages rely heavily on emotional appeals, which I am treating as cheap talk, but their actual offers reveal a strong preference for valueF on issues C and D, while showing flexibility on issueA (offering valueB multiple times). I will match their latest offer of valueB on my highest-weighted issueA and fully concede issueC to valueF, while claiming valueA on issueB and reducing my demand on issueD."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent's messages consist of repetitive emotional appeals and are treated as cheap talk, as their actual bids fluctuate significantly and frequently return to highly self-serving configurations. However, their persistent inclusion of `valueF` for `issueC` indicates strong preference for that term. To find a potential compromise at the 52% mark, I will concede fully on `issueC` to their likely top value while retaining `valueA` on `issueA` to protect my highest-weight utility, balancing a fair overall return of ~0.77."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "The opponent's messages rely heavily on emotional appeals and requests for fairness, which I treat as non-binding negotiation tactics. Looking at the numbers, they have made substantial concessions on my highest-weight issues (issueA and issueB), offering 'valueB' for both in their most recent bid. This indicates they are prioritizing issueC and issueD. I will capitalize on their willingness to concede on A and B by insisting on 'valueA' for issueA and 'valueB' for issueB, while offering 'valueE' for issueC and 'valueC' for issueD to find common ground, targeting a utility of 0.79."
+    },
+    {
+      "t": 0.56,
+      "reasoning": "The opponent's most recent offer includes `issueA: valueB` and `issueC: valueB`, which indicates they are willing to provide relatively high-utility values for me on these issues, though they continue to rely heavily on emotional appeals in their messages. Since my utility for `issueC: valueB` is quite high, I will accept it and offer `valueF` for `issueD` (my least important issue, which the opponent frequently requests). I will maintain my positions on `issueA` and `issueB` at their highest and second-highest values respectively to secure a strong utility while giving ground on the lower-ranked issues."
+    },
+    {
+      "t": 0.58,
+      "reasoning": "The opponent continues to accompany their offers with emotional, non-binding appeals to \"partnership\" and \"meeting halfway\", while their recent bids fluctuate wildly on issues A and B. Because issues A and B are my highest priorities (weights 0.4 and 0.3), I will firmly anchor on my top values for them while making steady, incremental concessions on issues C and D, where the opponent has recently explored various values like B, C, and E."
+    },
+    {
+      "t": 0.6,
+      "reasoning": "The opponent's emotional appeals are persistent but lack any concrete data or constraints, so I will treat them as cheap talk and rely entirely on the bid history. The opponent's offers jump around, frequently seeking `valueF` for issues C and D while occasionally offering `valueB` on my highest-priority issues (issueA and issueB). At t = 0.60, it's appropriate to concede on issueD while holding relatively firm on my highest-weighted issues (A and B) to maintain utility above 0.8. I will propose `valueA` for A, `valueB` for B, `valueC` for C, and concede to `valueE` on D."
+    },
+    {
+      "t": 0.62,
+      "reasoning": "The opponent's constant emotional appeals are a consistent tactic and should be treated as cheap talk. I will rely entirely on the math of their bidding, which indicates they strongly desire `valueF` across all issues but have occasionally softened on issues A and B. I am past the mid-game mark (t=0.62) and can start showing more flexibility on my two lowest-weight issues, C and D, while maintaining my highly valued issueA and issueB at `valueA`. This yields a strong utility for me (~0.80) while making substantive concessions on their likely preferred issues."
+    },
+    {
+      "t": 0.64,
+      "reasoning": "The opponent continues to attach highly emotional, repetitive messages to offers that yield exceptionally low utility for me (such as their latest offer of A:F, B:F, C:F, D:A). These messages are clear negotiation tactics and I will treat them as cheap talk, relying strictly on the bid numbers. Because time is advancing (t=0.64), I will propose a new combination offering slight concessions on my lower-weight issues (issueC and issueD) while remaining absolutely firm on my most critical issues (issueA and issueB) to maintain a utility around 0.82."
+    },
+    {
+      "t": 0.66,
+      "reasoning": "The opponent's latest offer focuses on conceding strongly on issueB and issueC to their 'valueB' options, while holding firm on 'valueF' for the extreme issues. I will accept their generous concessions on issueB and issueC, as those yield excellent utility for me. In return, I will maintain my top preference on the heavily weighted issueA, while conceding on issueD to an agreeable mid or low value, keeping my utility safely above 0.8."
+    },
+    {
+      "t": 0.68,
+      "reasoning": "The time fraction is 0.68, so we are transitioning into the moderately late game. Although the opponent uses elaborate emotional appeals, I am continuing to evaluate based on the utility of their offers. They've recently shown willingness to concede on issueB and issueC to `valueB`, so I will adopt those values while holding firm on my most important issue (issueA) and offering a slight concession on issueD."
+    },
+    {
+      "t": 0.7,
+      "reasoning": "The opponent's latest offer yields a utility around 0.56, which remains far below my target, and their messages consist of repetitive automated emotive appeals that provide no binding constraints. At t=0.70, I must continue adjusting to find an acceptable overlap without sacrificing my core interests. Consequently, I am lowering my position on the least critical issues (C and D) to offer a total utility around 0.80, while standing firm on my heavily weighted issues (A and B)."
+    },
+    {
+      "t": 0.72,
+      "reasoning": "The opponent's emotional appeals are treated as cheap talk. They have shown a recent interest in `valueD` for `issueC` and `valueB` for `issueD`, having just offered them in the latest turn or accepted them from my previous offer. I will incorporate those values while holding firm on high-importance issues `issueA` and `issueB` (`valueA` and `valueB` respectively) to maintain my utility around 0.84 as we approach the late-game stage."
+    },
+    {
+      "t": 0.74,
+      "reasoning": "The opponent is consistently relying on emotional appeals and vague statements of partnership while remaining stubborn on my most critical issue (issueA). However, they have recently offered favorable terms on issueB (valueB), issueC (valueB and valueA), and issueD (valueF). I will accept their proposed values for issueB and issueD, and compromise on issueC (valueB), while maintaining my top preference for issueA (valueA) to keep my overall utility at a strong 0.84 at this stage of the negotiation."
+    },
+    {
+      "t": 0.76,
+      "reasoning": "The opponent has made significant concessions recently, specifically jumping to `issueC: valueA` in their last two offers, while trading off between `issueA` and `issueB`. Since my utility for `issueC: valueA` is optimal and the opponent seems to use messages to display distress but fundamentally concedes via numbers, I will accept their proposal on `issueC` while continuing to ask for my top choices on `issueA` and a previously accepted compromise on `issueB`. I will concede `issueD` to `valueF` as they consistently prefer it and its cost to my utility is minimal."
+    },
+    {
+      "t": 0.78,
+      "reasoning": "We are entering the late stages of negotiation (t=0.78). The opponent's messages are consistently filled with emotional appeals while their offers alternate across various value combinations. In their most recent offer, they indicated a strong preference for issueC=valueF and issueD=valueA. Since these are my two lowest-weighted issues, I am conceding them entirely to match the opponent's exact requested values, while holding firm on my two most important issues (issueA and issueB) to maintain a healthy utility of approximately 0.79."
+    },
+    {
+      "t": 0.8,
+      "reasoning": "The opponent's messages rely entirely on emotional appeals and vague claims of partnership, while their offers fluctuate dramatically in value to me. However, they have recently shown a willingness to concede on `issueB` (offering valueC) and `issueD` (offering valueA). I will offer a compromise that accepts their preferred value for `issueD` and softens my demands on `issueB` and `issueC`, while firmly holding onto `valueA` for `issueA` since it carries my highest preference weight."
+    },
+    {
+      "t": 0.82,
+      "reasoning": "We are entering the late stages of negotiation (t=0.82). The opponent has been using non-binding emotional appeals without making substantial concessions in their numerical bids, though they have recently settled on 'valueA' for issueD. Since issueD is my least important issue, I can concede to 'valueA' on issueD to see if it brings us closer to a mutually acceptable agreement. I will hold firm on issueA and issueB where my utility weights are highest, while offering a moderate value on issueC."
+    },
+    {
+      "t": 0.84,
+      "reasoning": "The opponent's messages are continuous emotional appeals, which I will disregard as cheap talk and rely entirely on their bidding behavior. Late in the process, they appear determined to secure `valueA` on `issueD`. I will concede `issueC` slightly to `valueE` and maintain `valueA` on `issueD` to approach a deal while still preserving a high utility (~0.82) by holding firm on `issueA` and `issueB`."
+    },
+    {
+      "t": 0.86,
+      "reasoning": "The opponent's messages consist of emotional appeals and fake urgency with no concrete numbers, which I will ignore as cheap talk. In their recent bids, they have started offering 'valueA' for issueD and 'valueC' for issueC, which suggests these values are acceptable to them. I will match these exact values for issueC and issueD while holding firm on my most critical issues (issueA and issueB), achieving a high utility of 0.888 for myself."
+    },
+    {
+      "t": 0.88,
+      "reasoning": "The opponent's numerous emotional messages are treated as cheap talk. However, in their recent offers they have shown willingness to concede on my lower-priority issues (offering valueA on issueB, issueC, and issueD at different recent timestamps). By consolidating these recently offered concessions while countering with `valueB` on my most important issue (issueA), I target a strong utility of ~0.93. Since we're at t=0.88, this leaves me room to fall back to their t=0.88 proposal if needed before the deadline."
+    },
+    {
+      "t": 0.9,
+      "reasoning": "The opponent's emotionally appealing messages are treated as cheap talk. However, reviewing their recent offers reveals that they are willing to accept `valueB` for `issueA` (offered at t=0.90) and `valueA` for both `issueB` and `issueC` as well as `valueE` for `issueD` (offered at t=0.88). I will combine these into a single offer, which significantly favors my high-weighted issues (A and B) while granting them values they have explicitly requested or recently proposed on all issues, helping us close the deal ahead of the deadline."
+    }
+  ]
+}

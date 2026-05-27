@@ -1,0 +1,122 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent opened with all valueF (the worst values for me), giving me utility of only 0.2 across all issues. Their message claiming a \"firm mandate\" is cheap talk contradicted by the fact that this is t=0.00 — there's no evidence they can't move. I'll open with my best bid (all valueA) which gives me maximum utility of 1.0. Early game, I should anchor high and not concede anything yet."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent is repeatedly offering all valueF (minimum utility for me: 0.4*0.20 + 0.3*0.20 + 0.2*0.20 + 0.1*0.20 = 0.20) and claiming they have no discretion. This is classic cheap talk - their bids haven't moved at all. We're only at t=0.02, very early in negotiation, so I should hold firm at my best offer. I'll continue bidding my maximum utility offer (all valueA = 1.0 utility) since there's no reason to concede yet."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We're very early in the negotiation (t=0.04). The opponent started with all valueF (their best, my worst) and has barely moved (only issueA shifted from valueF to valueE on their last offer). Their messages are classic fabricated-constraints/authority tactics - I should ignore them. My utility from their latest offer is extremely low: 0.4×0.35 + 0.3×0.20 + 0.2×0.20 + 0.1×0.20 = 0.14+0.06+0.04+0.02 = 0.26. I should hold firm near my top utility since we're this early. I'll repeat my ideal bid of all valueA."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "We are very early in the negotiation (t=0.06). The opponent is stuck at all-valueF bids (utility ~0.2 for me), only marginally moving issueA from valueF to valueE. Their messages claim they have no flexibility, but their actual bids show minor movement. I should hold firm near my top utility for now, as there's no time pressure yet and the opponent's concessions are minimal. I'll repeat my all-valueA bid to signal my position clearly."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "It's very early (t=0.08) and the opponent is clearly using fabricated constraints (\"principal authorized\", \"market standard\") as cheap talk. Their actual bids are all at or near valueF (worst for me), while my current bids are all at valueA (best for me). The opponent has made minimal concessions - only moving issueA from valueF to valueE briefly, now moving issueB to valueE. I should hold firm at my top bid for now since there's plenty of time left and their offers are still extremely low utility for me."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent is making very low offers (all valueF/valueE), claiming they have no authority to move, but their actual bids show slow movement - they shifted issueA from valueF to valueE to valueD, so they ARE conceding, just very slowly. Their messages are classic cheap talk (fabricated authority/market claims). We're only at t=0.10, so there's no need to concede significantly. I'll continue holding firm on my top bid since we're still very early in the negotiation and the opponent is clearly able to move."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "We're only at t=0.12, so there's no urgency to concede significantly. The opponent is making very slow, incremental concessions (mostly stuck at valueF across all issues, with tiny moves on individual issues). Their messages are classic fabricated-constraint tactics (\"signed mandate\", \"industry standard\") which are untrusted cheap talk. My utility is maximized at all valueA (utility = 1.0). I'll stay at my ideal bid since we're very early and the opponent hasn't shown meaningful movement. I'll slightly vary to avoid exact repetition — actually my bid has been identical each turn, but at t=0.12 it's still very early and I should hold firm on high-weight issues. I'll stay at all valueA since that's optimal and we're far from deadline."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "We're only at t=0.14, very early in the negotiation. The opponent's messages are clearly fabricated constraints (\"authorized only up to,\" \"market standard\") — classic cheap talk. Their actual bids are almost entirely valueF across all issues, with only tiny movements on individual issues. They've barely conceded at all. I should continue holding firm on my top values, as there's plenty of time left and the opponent's offers give me very low utility. I'll keep bidding my maximum utility offer since it's still early game."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "We're only at t=0.16, very early in the negotiation. The opponent is making extremely low offers (mostly valueF across the board) and using fabricated authority/market claims - classic cheap talk. Their actual bids show very slow movement: they've barely conceded, mostly on issueA (moving to valueD/valueC at best). I should maintain my strong position since we're early. I'll stick with my top utility bid (all valueA) since there's no reason to concede yet - the opponent is far from meeting me halfway."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "We're at t=0.18, still very early in the negotiation. The opponent is making very low offers (mostly valueF across all issues) and repeating fabricated authority/constraint claims that are clearly cheap talk. Their concessions have been minimal - they've slightly moved issueA to valueC/valueD/valueE at times and issueC/issueD once each, but always keeping 3 issues at valueF. My utility from their offers is extremely low (~0.25 range). Since we're still early, I should stay close to my optimal bid but start showing very minor willingness to concede on low-weight issues. I'll keep issueA (weight 0.4) and issueB (weight 0.3) at valueA, but slightly concede on issueD (weight 0.1) to signal flexibility without giving up much utility."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent has been making very low offers (mostly valueF across all issues) with only minor concessions - they moved issueA to valueB in their latest bid at t=0.20. Their messages are classic fabricated constraint tactics (\"my principal authorized me only up to...\"), which should be ignored. We're still early (t=0.20), so I can afford to hold firm on my high-priority issues. I'll make a small concession on issueD (lowest weight at 0.1) to show some movement, but keep issueA and issueB at top values since they're most important to me."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has finally conceded issueA to valueA, which is my top value (utility 1.0 for me on the most important issue). However, they're still holding issueB, issueC, issueD at valueF. Their messages about \"authorization\" and \"compliance\" are cheap talk - the actual bids show they ARE moving. I'm still early at t=0.22. I should start making some small concessions to signal willingness to deal, but I hold strong on issueA (now agreed at valueA). I'll concede slightly on lower-weight issues (issueD, then issueC) while keeping issueA and issueB high."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent's messages are classic cheap talk (fabricated authority/mandate claims). Looking at their actual bids, they've been slowly moving: issueA has gone from valueF all the way to valueA (their t=0.22 offer), while issueB, issueC, issueD remain mostly at valueF or valueE. Their latest bid at t=0.24 shows issueA: valueF, issueB: valueE, issueC: valueF, issueD: valueE - a step back on issueA surprisingly. We're still early (t=0.24), so I should maintain a strong position. I've been repeating the same bid; I should vary slightly. My highest-weight issue is issueA (0.4), then issueB (0.3). I'll stay firm on issueA=valueA and issueB=valueA but make a small concession on issueD (lowest weight=0.1) to show some movement without giving away much utility."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent has been making very slow concessions - they've moved issueA to valueB (their latest bid at t=0.26) and issueB to valueE, while issueC and issueD remain mostly at valueF/valueE. Their messages are clearly cheap talk with fabricated constraints. We're only at t=0.26, so there's no urgency to concede heavily yet. The opponent seems to be signaling some movement on issueA (reached valueA at t=0.22, then backed to valueB) and issueB (reached valueE). I should start making small concessions to show movement while still aiming for high utility. I'll concede slightly on issueD (least important) to signal willingness to negotiate, while maintaining strong positions on issueA and issueB."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's messages are classic fabricated constraints and cheap talk - their actual bids show they ARE conceding (issueA moved from valueF to valueA, issueB from valueF to valueE, etc.). However, their concessions are slow and primarily on issueA while keeping issueB, issueC, issueD at valueF. At t=0.28, we're still early-mid game. The opponent's best offer so far gives me roughly: issueA=valueA (0.4×1.0) + issueB=valueF (0.3×0.2) + issueC=valueF (0.2×0.2) + issueD=valueF (0.1×0.2) = 0.4 + 0.06 + 0.04 + 0.02 = 0.52 utility. I should maintain a strong position but start showing minor flexibility on low-weight issues. I'll keep valueA on issueA and issueB, but concede slightly on issueC and issueD (my least important issues) to signal willingness to trade."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent's messages are classic cheap talk with fabricated constraints, but their actual bidding behavior shows slow concessions - they've moved issueA to valueA/valueB range and made minor moves on other issues, but issueB remains at valueF/valueE and issueC/issueD are mostly at valueF/valueE. At t=0.30, we're still early-mid game. My highest weight issue (issueA, 0.4) is where they've shown most movement. I should start conceding on lower-weight issues (issueD first, then issueC) while holding firm on issueA and issueB. I'll offer a slight concession on issueC to signal flexibility while keeping issueA and issueB at top values."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent has been making very low offers, mostly keeping issueB, issueC, issueD at valueF while slowly conceding on issueA. Their messages are classic cheap talk claiming hard mandates - but their actual bids show gradual movement. Their latest offer at t=0.32 is issueA: valueF, issueB: valueF, issueC: valueF, issueD: valueD - which is still very low utility for me. We're only at t=0.32 so there's still plenty of time. I should start conceding slightly on lower-weight issues (issueD, issueC) while holding firm on issueA and issueB. I'll offer a slight concession on issueC from valueB to valueC, and keep issueD at valueD to signal willingness to trade, while holding issueA and issueB at valueA."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent keeps claiming hard mandates but their behavior shows gradual concession - they've now offered valueA on issueA and valueB on issueB at various points. Their latest offer at t=0.34 is issueA:valueF, issueB:valueB, issueC:valueF, issueD:valueF, which gives me low utility. I'm at t=0.34, still early-mid game, so I can continue holding firm on my high-weight issues. I'll start making slightly more visible concessions on low-weight issueD and issueC while holding valueA on issueA and issueB."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent is making very slow, incremental concessions primarily on issueA (now at valueE/valueB) while keeping issueB, issueC, issueD mostly at valueF. Their messages are clearly fabricated authority constraints - not credible. We're at t=0.36, still relatively early. My highest weight issue is issueA (0.4) and the opponent just offered valueA on it at t=0.22, which is great. I should start conceding on lower-weight issues (issueD first, then issueC) while holding firm on issueA and issueB. I'll concede issueD to valueF and issueC slightly, keeping issueA and issueB at valueA to maximize my utility while signaling some movement."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent has been making very slow concessions, mostly offering valueF on most issues with minor improvements here and there. Their latest offer has issueA: valueF, issueB: valueE, issueC: valueF, issueD: valueD - which is very low utility for me. All their messages are fabricated authority claims that I should ignore. At t=0.38, we're still in early-mid game. The opponent has shown willingness to move on issueA (went to valueA at t=0.22) and has moved issueB to valueE/valueB at times, and issueD to valueD. I should start making more meaningful concessions on low-weight issues (issueD, issueC) while holding firm on issueA and issueB. I'll concede issueD to valueF (my weight is only 0.1) and keep pressure on the high-weight issues."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "We're at t=0.4, still relatively early-mid game. The opponent has been making very slow, scattered concessions - they've occasionally offered valueA on issueA (t=0.22), valueB on issueB (t=0.34, 0.36, 0.40), but mostly staying at valueF on most issues. Their messages are classic cheap talk with fabricated authority constraints. My utility is highest on issueA (weight 0.4), then issueB (0.3), issueC (0.2), issueD (0.1). I've been holding at all-A bids and slowly conceding on lower-weight issues. I should start showing some concession on issueD (lowest weight) and possibly issueC, while holding firm on issueA and issueB. I'll concede issueD to valueF (already done at t=0.36) and keep conceding slightly on issueC, while staying at valueA for issueA and issueB."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "We're at t=0.42, still early-to-mid game. The opponent has been slowly conceding on issueA (now at valueC) and issueB (now at valueB), while keeping issueC and issueD at low values. Their messages are pure cheap talk - fabricated authority constraints. Looking at their actual bids, they're clearly willing to move. My highest weight issue is issueA (0.4), then issueB (0.3). I should keep valueA on issueA and valueA on issueB (my top priorities), and continue making small concessions on issueC and issueD (lower weights). I'll move issueC to valueD and keep issueD at valueF to signal some flexibility while protecting my high-value issues."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "We're at t=0.44, still in mid-game. The opponent has been very slowly conceding - their latest offer is issueA: valueF, issueB: valueF, issueC: valueF, issueD: valueC. Their best offers to me have been issueA: valueA (at t=0.22) and issueB: valueB (at t=0.34, 0.36, 0.40, 0.42). Their messages are all fabricated authority/constraint claims. \n\nMy utility from their latest offer: 0.4*0.20 + 0.3*0.20 + 0.2*0.20 + 0.1*0.68 = 0.08+0.06+0.04+0.068 = 0.248 - very low.\n\nI should start conceding slightly more on issueC and issueD (lower weight issues) while holding firm on issueA and issueB. I've been conceding issueD from valueA down to valueF already. Let me now concede issueC a bit more (to valueD or E) while keeping issueA at valueA and issueB at valueA. This signals movement while protecting my high-weight issues."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent's latest offer (t=0.46) is issueA: valueB, issueB: valueB, issueC: valueF, issueD: valueF. My utility for that would be: 0.4*0.84 + 0.3*0.84 + 0.2*0.20 + 0.1*0.20 = 0.336 + 0.252 + 0.04 + 0.02 = 0.648. That's decent but I can do better. The opponent seems to be slowly conceding on issueA (reached valueA at t=0.22!) and issueB (now at valueB). Their pattern is erratic but generally improving. We're at t=0.46, still mid-game. I should start conceding a bit on lower-importance issues (issueC, issueD) while holding firm on issueA and issueB. I'll offer issueA: valueA, issueB: valueA, issueC: valueD, issueD: valueF - my utility: 0.4*1.0 + 0.3*1.0 + 0.2*0.52 + 0.1*0.20 = 0.40 + 0.30 + 0.104 + 0.02 = 0.824. This is a slight variation from my recent bids showing some movement on issueC."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "We're at t=0.48, roughly mid-game. The opponent's bids have been mostly offering valueF or valueE across issues, with only gradual improvement. Their latest bid at t=0.48 gives issueA: valueE, issueB: valueF, issueC: valueB, issueD: valueF — which is very low utility for me. Their messages are all fabricated constraints (cheap talk). \n\nLooking at opponent concession patterns: they've shown improvement on issueA (reached valueA briefly at t=0.22), issueB (reached valueB several times), issueC (reached valueB at t=0.48), issueD (reached valueC at t=0.44). The opponent seems to be exploring different combinations but not consistently offering good terms.\n\nI should start making more meaningful concessions on lower-weight issues (issueC, issueD) while holding firm on issueA and issueB. I'll offer issueA: valueA, issueB: valueA, issueC: valueD, issueD: valueF — this shows some movement on issueC compared to recent bids while keeping high utility on the most important issues. My utility: 0.4*1.0 + 0.3*1.0 + 0.2*0.52 + 0.1*0.20 = 0.40 + 0.30 + 0.104 + 0.02 = 0.824."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "We're at t=0.5 (midpoint). The opponent has been making very low offers throughout, clearly trying to extract maximum value for themselves. Their messages are all fabricated constraints/authority claims - classic cheap talk. Looking at their actual bid trajectory: they've been slowly improving on issueA (reached valueA at t=0.22, then fluctuated), issueB (reached valueB at t=0.34, valueC at t=0.50), issueC (has been mostly valueF with occasional valueE/valueB), issueD (varies). Their latest offer at t=0.50: issueA=valueB, issueB=valueC, issueC=valueF, issueD=valueE - this gives me utility of 0.4*0.84 + 0.3*0.68 + 0.2*0.20 + 0.1*0.35 = 0.336+0.204+0.04+0.035 = 0.615. I need to start making more meaningful concessions on lower-weight issues while keeping issueA and issueB strong. I'll concede more on issueC and issueD (low weight), keep issueA at valueA (highest weight) and start conceding slightly on issueB. Let me try issueA=valueA, issueB=valueB, issueC=valueD, issueD=valueF for utility: 0.4*1.0+0.3*0.84+0.2*0.52+0.1*0.20 = 0.40+0.252+0.104+0.02 = 0.776."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent's messages are all fabricated authority/constraint claims that I should ignore. Looking at their actual bidding behavior, they've been making very slow concessions - mostly staying at valueF on most issues with occasional improvements. Their latest offer (t=0.52) is issueA: valueF, issueB: valueF, issueC: valueE, issueD: valueC, which gives me very low utility (0.4*0.2 + 0.3*0.2 + 0.2*0.35 + 0.1*0.68 = 0.08+0.06+0.07+0.068 = 0.278). \n\nWe're at t=0.52, mid-game. I've been conceding on issueC and issueD (less important to me) while holding firm on issueA and issueB (most important). I should continue this strategy - concede a bit more on issueC and issueD, while keeping issueA at valueA and issueB at valueA or making a small concession on issueB. Let me try conceding issueB to valueB and issueC to valueE, issueD to valueF to signal flexibility while protecting issueA."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "The opponent has been slowly conceding on issueA (reached valueB) and issueB (now at valueB), while keeping issueC mostly at valueF-valueE and issueD at valueF. Their latest offer (t=0.54) is issueA:valueB, issueB:valueB, issueC:valueE, issueD:valueF. Their utility to me: 0.4*0.84 + 0.3*0.84 + 0.2*0.35 + 0.1*0.20 = 0.336 + 0.252 + 0.07 + 0.02 = 0.678. We're at t=0.54, still mid-game. I've been making modest concessions on issueC and issueD. I should concede a bit more on issueB (from valueA toward valueB) while keeping issueA at valueA. I'll move issueB to valueB to show progress, keep issueA at valueA (highest weight), issueC at valueD, issueD at valueF. This gives me: 0.4*1.0 + 0.3*0.84 + 0.2*0.52 + 0.1*0.20 = 0.4 + 0.252 + 0.104 + 0.02 = 0.776."
+    },
+    {
+      "t": 0.56,
+      "reasoning": "The opponent's messages are all cheap talk (fabricated authority/compliance constraints). Looking at their actual bids, they've been very slowly conceding - their latest offer (t=0.56) is issueA: valueB, issueB: valueF, issueC: valueB, issueD: valueF, which gives me utility of 0.4*0.84 + 0.3*0.20 + 0.2*0.84 + 0.1*0.20 = 0.336+0.06+0.168+0.02 = 0.584. We're at t=0.56, still mid-game. I've been slowly conceding on lower-priority issues (issueC, issueD) while holding firm on issueA and issueB. I should continue conceding slightly on issueC/issueD (low importance) but maintain pressure on issueA and issueB. I'll offer a small concession on issueB (move to valueB) while keeping issueA at valueA, and conceding issueC to valueE and issueD to valueF, targeting a utility around 0.4*1.0 + 0.3*0.84 + 0.2*0.35 + 0.1*0.20 = 0.40+0.252+0.07+0.02 = 0.742."
+    }
+  ]
+}

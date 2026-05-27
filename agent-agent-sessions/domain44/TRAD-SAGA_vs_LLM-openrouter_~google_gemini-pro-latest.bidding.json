@@ -1,0 +1,194 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The negotiation has just begun (t=0.0). I will propose my maximum utility values for the issues where our preferences diverge (issues A, B, C, and F). The opponent's opening offer included valueB for issueD and valueA for issueE, both of which happen to yield me maximum utility for those issues, so I will adopt them to show collaborative intent without sacrificing my own utility, yielding a package of 1.0 total utility."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation is in its very early stages (t=0.02). The opponent repeated their initial offer, which provides me with a very low utility across most issues (except D and E, where our interests align). Since we both agree on issueD: valueB and issueE: valueA, I will continue to include them. I will make a very minor concession on issueF to signal willingness to negotiate while holding firm on the highest-weight issues (A, B, C) to keep my targeted utility extremely high."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The negotiation is still very early (t=0.04), and the opponent has repeated the exact same offer three times. I will maintain a high-utility bid for myself to signal that I expect them to concede as well. I will change issueA to valueB to offer a slight variation and see if it aligns better with the opponent's hidden preferences, while keeping issues D and E at the values they requested since they provide me with top utility."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The time fraction is very early (t=0.06), and the opponent has repeatedly bid the exact same offer giving me a low utility of 0.44. We align on `issueD` (valueB) and `issueE` (valueA), which both give me maximum utility and appear to be preferred by the opponent. I will retain these aligned values while making a minor concession on `issueB` (changing to valueA, which still yields 0.87 utility) to test the opponent's flexibility."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The time fraction is still very early (t=0.08). The opponent has rigidly repeated the identical offer in every round. Fortunately, their offer contains values that highly favor me for issueD (valueB = 1.0 utility) and issueE (valueA = 1.0 utility). To gently probe for a compromise without sacrificing too much utility early on, I will maintain the agreed-upon values for D and E, keep my top values for A, B, and F, and concede slightly on issueC by offering valueB."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent is holding completely firm on their initial offer, which gives me only 0.44 utility. Because it is still early in the negotiation (t=0.10), I should maintain a high target utility (above 0.9) while continuing to probe for alternatives. To do this, I will keep issues D and E at the values the opponent wants (which are also high utility for me) and make slight concessions on issues A and B to discover their preferences."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent is stubbornly repeating their initial offer, making no concessions so far. Since it is still early in the negotiation (t=0.12), I will maintain a high target utility for myself (around 0.94) while continuing to explore alternative value combinations on issues like A and F to see if we can find any traction. I continue to offer their preferred choices on issues D and E, which also align with my top utilities."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The negotiation is still in the early phase (t=0.14). The opponent has been repeating the exact same offer since the beginning, which yields a low utility for me (0.44 overall). Fortunately, we seem to mutually benefit from `issueD: valueB` and `issueE: valueA`, so I will continue to lock those in. I will propose a new combination for the remaining issues that maintains a high utility for myself (approx 0.90) to test if the opponent is willing to move on any dimension."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent continues to hold firm on their initial offer, which provides me very low utility (0.44) due to insisting on 'valueC' across most issues. Since we are still very early in the negotiation (t=0.16), I am holding my ground around the ~0.90 utility mark. I will present a new permutation of my top-tier preferences to signal flexibility while maintaining high personal utility, keeping 'valueB' for issueD and 'valueA' for issueE since we mutually benefit from them."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "Early in the negotiation (t=0.18), the opponent is holding completely firm on their initial offer. Since their choices on `issueD` and `issueE` give me excellent utility, I will continue to lock those in. I will propose a new high-utility offer (around 0.90) by substituting `valueB` for `issueA` and `issueC`, encouraging the opponent to begin moving without sacrificing my core interests yet."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent is holding extremely firm, repeating the exact same offer in all 11 of their turns. Their offer gives me very low utility for issues A, B, C, and F but proposes my top value for issues D and E. To avoid deadlock, I will continue to explore mid-weight variations, holding firm on their preferred values for D and E while presenting an all-valueB mix for the other issues to see if this combination breaks their stubbornness."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has rigidly offered their opening bid every turn without making any concessions. Since it is still early (t=0.22), I will maintain a high utility for myself. However, to incentivize movement, I will concede on issueF (offering valueC, which they have requested continuously), as it carries a lower importance weight for me and only results in a slight drop in my overall utility."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent is holding firm on their initial offer, making no concessions so far. Since we are still early in the negotiation (t=0.24), I will continue proposing offers that yield me very high utility while accommodating the opponent's apparent strong preference for 'valueB' on issueD and 'valueA' on issueE, which also happen to be my top choices. I am now exploring varying 'issueB' and 'issueF' to 'valueA' and 'valueB' to see if there is any movement or flexibility on their side."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent has rigidly held onto the exact same offer since the beginning of the negotiation, which yields a very low utility for me (approximately 0.44). As we are still relatively early in the negotiation process (t=0.26), I will continue maintaining a firm stance while showing subtle flexibility. I am adjusting my offer on issueC and issueF to valueB to present a new combination that yields ~0.89 utility for me, thereby maintaining a strong margin in hopes of coaxing a concession."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent has rigidly maintained their exact same opening offer in every round. I will maintain my positions on the highest weight issues while incorporating a concession on issueF, matching their desired valueC (since issueF is of lower importance weight to me, 0.1). This offer provides me a strong utility of 0.90 while aligning with their requests on issues D, E, and F to prompt movement."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent has stubbornly maintained a single offer with a relatively low utility for me (0.44). Since the deadline is still distant (t=0.30), I will continue to propose mutually beneficial agreements that contain overlapping high-utility values like `issueD: valueB` and `issueE: valueA`, while exploring different concessions on other issues. I will accept a slight utility reduction down to roughly 0.88 to signal willingness to negotiate in hopes of breaking the opponent's rigidity."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent remains completely rigid, consistently proposing the exact same low-utility offer in every round. However, we already align on issueD and issueE, so I will maintain those at 'valueB' and 'valueA' respectively. At t=0.32, it's too early for major concessions, so I will continue aiming for around 0.90 utility by conceding on the lower-importance issueF to their preferred 'valueC', while slightly shifting issueB to 'valueA' to explore new permutations they might accept."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent remains completely rigid, repeatedly offering the same bid since the negotiation began. We are still in the early-mid stage (t=0.34), so I will maintain a firm stance on the primary issues to avoid making unreciprocated concessions. I am keeping issues D and E on the values we mutually benefit from, while making a minor exploratory adjustment to issues C and F."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent is remaining rigid and repeating the same offer, which gives me maximum utility for issueD (valueB) and issueE (valueA) but minimum utility for the rest. I will accept their proposal for issueD and issueE, as providing them those values costs me nothing. Meanwhile, since it is still relatively early (t=0.36), I will continue exploring different high-utility configurations for the remaining issues to find a combination that might appeal to them while maintaining a utility above 0.85 for myself."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent has repeatedly sent the exact same proposal for the entire negotiation, stubbornly holding their ground while currently offering me a total utility of 0.44. Since time is at 0.38, I am not yet under pressure to make significant concessions. I will continue probing for a favorable joint resolution by maintaining my strongest values for issues A, C, D, and E, slightly conceding on issue B to valueA and on issue F to their requested valueC, retaining a high overall utility of 0.874."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent has stubbornly maintained the exact same offer since the beginning, showing no willingness to concede. To prompt them to engage, I will construct an offer that gives them exactly what they want on issues D, E, and F, while stepping down to moderately high-utility alternatives on issues A, B, and C. This maintains an overall utility above 0.8 for me while testing if the opponent is strictly bound or just employing a hardball strategy."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "The opponent has rigidly maintained the exact same offer since the beginning of the negotiation, demonstrating extreme stubbornness. Fortunately, their request for `valueB` on `issueD` and `valueA` on `issueE` perfectly aligns with my highest utilities for those issues, giving us a strong foundation. Given the approaching mid-game (t=0.42), I will concede entirely on `issueF` to their preferred `valueC` (which only impacts my utility slightly due to its 0.1 weight) while slightly conceding on `issueC` to `valueB`, aiming for an overall utility around 0.84."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "The opponent is repeating their initial offer without showing any flexibility. Fortunately, their preferred values for `issueD` (valueB) and `issueE` (valueA) perfectly align with my top utility values, so I will lock those in. I will also concede on `issueF` to their preferred `valueC`, as this has a lower importance weight for me, while mixing moderate-to-high utility variants for `issueA`, `issueB`, and `issueC` to invite a counteroffer."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent has stubbornly refused to budge from their initial offer, persisting with the identical bid across every turn. Since the time is approaching the midpoint (t=0.46), I will make a moderate concession on issueC and issueF to see if they reciprocate, while maintaining issueD and issueE on mutually beneficial values. I am preserving high utility for myself (overall > 0.84) to avoid lowballing myself too early."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "At time t=0.48, we are nearing the middle of the negotiation and the opponent has stubbornly repeated their initial offer without making any concessions. I will attempt to break the deadlock by fully yielding on issueC (offering their preferred valueC), while retaining my high-utility options for issues A and B. This keeps my utility above 0.80 while delivering three of their exact requested values (issueC: valueC, issueD: valueB, issueE: valueA)."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "The opponent has rigidly maintained the exact same offer since the beginning of the negotiation, refusing to compromise. At the halfway mark (t=0.5), I will begin to strategically concede by adopting 'valueC' for issueC—a value the opponent has demanded—while holding steady on issueD and issueE where our interests already align. I will otherwise prioritize my higher-weight issues (issueA and issueB) to maintain a relatively strong utility of ~0.82 for myself while looking for any sign of flexibility."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent is holding entirely firm on their initial offer of A=C, B=C, C=C, D=B, E=A, F=C since the very beginning of the negotiation. Our preferences perfectly align on issue D (value B) and issue E (value A). At `t=0.52`, I will start making meaningful concessions on the less important issue to me (issue F), offering their preferred value `valueC`, while proposing a combination of high-utility values on issues A, B, and C in order to maintain a strong utility around 0.82 for myself."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "The opponent has rigidly held to a single offer since the start of the negotiation, demanding `valueC` on issues A, B, C, and F. Since we are just past the midpoint (t=0.54) and the opponent refuses to budge, I will offer a concession by giving them `valueC` on issueC (along with their preferred `valueB` on issueD and `valueA` on issueE). By protecting my utility on A, B, and F, I maintain an acceptable utility of 0.84 while making a meaningful compromise."
+    },
+    {
+      "t": 0.56,
+      "reasoning": "The opponent has rigidly maintained the exact same offer since the very beginning of the negotiation without any deviation. Since we are in the mid-game phase (t=0.56), I need to probe for compromises while still protecting my high-importance issues. I am offering a package that gives the opponent their preferred values for issueD, issueE, and issueF (my lower-weight issue), while moderately conceding on issueA and issueC to see if they will break their holding pattern."
+    },
+    {
+      "t": 0.58,
+      "reasoning": "The opponent is remaining completely firm, repeating the exact same bid for the entire negotiation. Given that we are at t=0.58, I will propose a bid that includes their exact requested values for issues D, E, and F (where D and E overlap with my max utility), while offering my second-best choices on issues A, B, and C. This will maintain a utility of around 0.80 for me while hopefully enticing the opponent to finally make some concessions."
+    },
+    {
+      "t": 0.6,
+      "reasoning": "The opponent has stubbornly refused to move from their opening position throughout the entirety of the negotiation. Since we have passed the midpoint, I will continue to offer mutual ground on issues D and E while making marginal concessions (such as testing `valueC` on issueC), aiming to keep my utility above 0.75 without a reciprocal concession. If they continue to hold entirely firm, I will have to limit further movement until a signal of compromise appears."
+    },
+    {
+      "t": 0.62,
+      "reasoning": "The opponent has rigidly maintained the exact same offer since the beginning, targeting valueC for issues A, B, C, and F. Since we are entering the later mid-game at `t=0.62`, I will begin conceding on the opponent's preferred values for issues where my priority is slightly lower (issueF) or where I can afford a targeted concession (issueC), while holding firm on my most important issues (issueA and issueB). This offer meets them completely on issues C, D, E, and F, yielding a utility of 0.76 for myself."
+    },
+    {
+      "t": 0.64,
+      "reasoning": "The opponent has stubbornly demanded valueC for most issues and recently shifted issueD to valueC, lowering my utility significantly. I will firmly revert issueD back to valueB, which they previously offered and which maximizes my utility, while accepting their preference on issueF (valueC). I will offer intermediate values on issueA, issueB, and issueC to encourage movement from their side while keeping a target utility near 0.80."
+    },
+    {
+      "t": 0.66,
+      "reasoning": "The opponent unexpectedly dropped their offer utility by shifting issueD from valueB to valueC, indicating resistance. I will pivot my strategy by exploring a significant concession on issueA (matching their preferred valueC) while continuing to concede on issueF. In exchange, I need to hold firm on issueB, issueC, and issueD to maintain a total utility above 0.75, hoping this alternative configuration aligns better with their hidden priorities."
+    },
+    {
+      "t": 0.68,
+      "reasoning": "The opponent is holding extremely firm on `valueC` for almost every issue, and has even hardened their stance on `issueD` lately. I am starting to offer `valueC` on some of their targeted issues (like `issueB` and `issueF`) to gauge if this is enough to elicit some flexibility, while protecting my high-utility values on `issueA`, `issueC`, and `issueD`."
+    },
+    {
+      "t": 0.7,
+      "reasoning": "The opponent just switched issueD to valueA, which is costless for me since both valueA and valueB yield maximum utility. I will lock in their proposed values for issueD, issueE, and issueF. To find a workable compromise as we enter the later stages of negotiation, I will concede issueA to their strongly preferred valueC, but I must hold firm on my most valuable options for issueB and issueC to maintain an acceptable overall utility."
+    },
+    {
+      "t": 0.72,
+      "reasoning": "The opponent has recently shifted their bid on issueD to valueA, which is ideal as it matches my maximum utility. Meanwhile, they remain steadfast on valueC for issues A, B, C, and F, and valueA for issueE. I will reciprocate their cooperative movement on issueD by locking in valueA and conceding on our low-weight issueF (to valueC) alongside a partial concession on issueC (to valueB) to inch closer to an agreement without dropping my overall utility too sharply."
+    },
+    {
+      "t": 0.74,
+      "reasoning": "The opponent has recently shifted their preference on issueD to valueA, which matches my top preference perfectly. They also continuously request valueA for issueE and valueC for issueF, meaning we can fully align on issues D, E, and F while satisfying my high and moderate utilities. I will offer a combination that maintains these agreed-upon positions and explores a new concession on issues A, B, and C to find a mutually acceptable package as we approach the late stage of negotiations."
+    },
+    {
+      "t": 0.76,
+      "reasoning": "The time fraction is 0.76, signaling the onset of the late-game phase. The opponent has maintained a remarkably persistent stance on issues A, B, C, and F (all valueC) while fluctuating on issueD, indicating that issueD might be of lower importance to them. I will concede issueC and issueF to their preferred valueC to elicit reciprocity, while retaining high-utility values on issueA, issueB, issueD (where valueA grants me 1.0 utility and was recently offered by them), and issueE."
+    },
+    {
+      "t": 0.78,
+      "reasoning": "The negotiation is entering the late stage (t=0.78) and the opponent's position is highly static, strictly demanding valueC for issues A, B, C, and F, while recently fluctuating between valueA, valueB, and valueC for issueD. To make progress, I will fully adopt their exact demands for issues D, E, and F (where D=valueB, E=valueA, F=valueC) since I can still obtain near-maximum utilities on D and E. To build towards an agreement, I will partially concede on issueC to valueB and offer valueB for issues A and B, which allows me to retain a utility slightly above 0.80."
+    },
+    {
+      "t": 0.8,
+      "reasoning": "The opponent is extremely rigid, consistently holding out for `valueC` on issues A, B, C, and F, while recently shifting back to `valueA` on issue D. Since we are at `t=0.80`, I am increasing my concessions by offering the opponent's exact requested value on issue B (`valueC`) and issue F (`valueC`), as well as matching their preference for issue D (`valueA`) and issue E (`valueA`). To keep my utility resilient, I will request high-utility values on issues A and C."
+    },
+    {
+      "t": 0.82,
+      "reasoning": "The opponent has just made a major concession on issueA by offering 'valueA', which has top utility for me. At t=0.82, we are in the late game, so I will lock in this concession alongside our mutual agreement on issueE ('valueA') and issueD ('valueB'). To reciprocate, I am fully conceding issueC and issueF to the opponent's consistently preferred 'valueC', while holding my ground on issueB for a balanced total utility of 0.76."
+    },
+    {
+      "t": 0.84,
+      "reasoning": "We are in the late stages (t=0.84) and the opponent recently showed some flexibility by offering `issueA: valueA` and `issueC: valueB`. I will construct an offer incorporating these previous opponent suggestions, alongside their strong historical preferences (`issueD: valueB`, `issueE: valueA`, `issueF: valueC`). For `issueB`, I'll offer `valueA` as a slight alternative to my ideal to search for middle ground, aiming to secure an agreement above a 0.80 utility."
+    },
+    {
+      "t": 0.86,
+      "reasoning": "The time fraction is 0.86, so reaching an agreement becomes a priority. The opponent has recently conceded on issueC (offering valueB), issueD (offering valueA), and previously on issueA (offering valueA). I will construct an offer that perfectly matches their latest concessions on issueC, issueD, issueE, and issueF, while holding firm on issueA and issueB to maintain a high utility of 0.844."
+    },
+    {
+      "t": 0.88,
+      "reasoning": "The time fraction is at 0.88, indicating the deadline is very close. The opponent has signaled openness to 'issueA: valueA' at t=0.82, 'issueD: valueA' at t=0.86, and consistently demands 'issueC: valueC', 'issueE: valueA', and 'issueF: valueC'. I am incorporating these acceptable values to present a highly cooperative bid, specifically adopting their proposed 'issueD: valueA' and 'issueC: valueC' while securing 'issueA: valueA' and 'issueB: valueB' to maintain an overall utility well above my reservation value (0.76)."
+    },
+    {
+      "t": 0.9,
+      "reasoning": "With the deadline fast approaching (t=0.9), I am making a major concession to your consistent demands by accepting `issueB: valueC`, `issueE: valueA`, and `issueF: valueC`. In exchange, I am adopting values you recently signaled flexibility on (`issueA: valueA` from t=0.82 and `issueD: valueA` from t=0.86), while keeping `issueC: valueA` to maintain a workable utility for my side (target utility: 0.76). This bridges the gap effectively while meeting your most critical, non-negotiable points."
+    },
+    {
+      "t": 0.92,
+      "reasoning": "The current time fraction is 0.92, indicating we are very close to the deadline. The opponent's latest offer yields a utility of 0.60 for me by proposing `issueC: valueA` and `issueD: valueB`, which are both optimal for my preferences. To secure an agreement without dropping all the way to 0.60 utility, I will accept their generous offers on C, D, E, and F, and their desired value for B (`valueC`), while attempting a slight compromise on A (`valueB`) to maintain a utility of 0.74."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening bid at t=0, so I should start with my maximum utility offer. My highest utility values across all issues are: issueA=valueE (1.0), issueB=valueE (1.0), issueC=valueE (1.0), issueD=valueE (1.0), issueE=valueE (1.0). This gives me a utility of 1.0 across all weighted issues. Starting strong is appropriate at the beginning of negotiation with no time pressure yet."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent opened with a very aggressive bid heavily favoring their own interests (low utility values for me across the board). At t=0.02, we're very early in the negotiation, so I should stay close to my top-utility bid. My opening was all valueE (max utility ~1.0). I'll make a very minor concession on the least important issues (issueA and issueC, both weight 0.1) while holding firm on issueE (weight 0.3), issueB and issueD (weight 0.2 each). I'll drop issueA to valueD and issueC to valueD to signal willingness to negotiate while maintaining high overall utility."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent is holding firm at {issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueA, issueE: valueB}, which gives me very low utility (roughly 0.1*0.2 + 0.2*0.2 + 0.1*0.73 + 0.2*0.2 + 0.3*0.31 ≈ 0.28). It's very early (t=0.04), so I should stay near my top bids. I'll make a small concession on low-weight issues (issueA, issueC) while holding firm on my high-weight issues (issueE, issueD, issueB)."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is barely moving - they've gone from (A,A,B,A,B) to (A,B,B,C,B), showing very slight concessions on issueB and issueD. Their utility to me is very low (~0.1*0.2 + 0.2*0.2 + 0.1*0.73 + 0.2*0.74 + 0.3*0.31 ≈ 0.02+0.04+0.073+0.148+0.093 = 0.374). We're very early (t=0.06), so I should stay near my top utility while making small concessions. My highest weight issue is issueE (0.3), so I'll hold firm there at valueE. I'll concede slightly on lower-weight issues like issueA and issueC while keeping issueB, issueD, issueE at high values."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent has been mostly holding firm on their preferred values (valueA/valueB for most issues), but I notice they moved issueD to valueE in their last offer, which is my top value for that issue. They seem to care a lot about issueE (always offering valueB) and issueA (always valueA). My highest weight issue is issueE (0.3), so I should hold firm there. IssueA has low weight (0.1) for me, so I can concede there. I'll keep issueE at valueE, issueD at valueE (opponent just offered this), and concede on issueA to valueA while maintaining good values on issueB and issueC."
+    }
+  ]
+}

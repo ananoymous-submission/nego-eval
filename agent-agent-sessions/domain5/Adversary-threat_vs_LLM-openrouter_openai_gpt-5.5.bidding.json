@@ -1,0 +1,78 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.00 there is no time pressure to concede, so I am targeting my maximum-utility bid. The opponent’s opening offer gives me my least-preferred value on every issue, and their deadlock warning is cheap talk rather than evidence of real constraint."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "I am targeting a very high utility bid because it is still the opening phase at t=0.02, and the opponent has not conceded at all from their all-valueD offer. Their messages contain threats of deadlock, but the actual offer history shows they are holding firm rather than making a credible concession, so I will make only a small move on my lowest-weight issue to avoid simply repeating my prior bid."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "At t=0.04 it is still very early, so I am targeting a high-utility bid while making a small concession on my lowest-weight issue to avoid repeating my prior offer. The opponent has held firm at all valueD offers and used deadlock threats, but their behavior shows no real concession yet, so I should not move much on high-weight issues. This bid preserves issueA, issueB, and issueC at my best values while conceding issueD further."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a high-utility bid because it is still very early at t=0.06, while making a real concession on my lowest-weight issueD. The opponent has only slightly improved their offer by moving issueA from valueD to valueC, so their threats about deadlock are not yet a reason to concede on my high-weight issues."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am targeting a high utility bid around 0.87 because it is still very early at t=0.08, so there is no need to accept the opponent’s low-utility offers. The opponent has only moved slightly on issueA while holding issueB, issueC, and issueD at valueD, and their threats are cheap talk; I will keep my highest-weight issues A and B at valueA while conceding further on lower-weight issues C and D."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a high-utility bid around 0.81 because it is still very early at t=0.10, so there is no need to collapse toward the opponent’s low-utility offers yet. The opponent has made only a small concession on issueA while holding issueB-D at valueD, and their threats look like cheap talk rather than true deadline pressure. I will make a real but limited concession on the lower-weight issueC while holding firm on the more important issueA and issueB."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "I am targeting a strong early-game utility around 0.76 by holding firm on the two most important issues, issueA and issueB, while conceding issueC and issueD to valueD. The opponent has made real concessions on issueA from valueD to valueB, despite aggressive messages, so I treat the bidding pattern as more informative than the threats and reciprocate only on lower-weight issues at this early time."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "At t=0.14 it is still early, so I am targeting a high-utility bid while continuing to concede mainly on my lower-weight issues. The opponent’s actual offers show some concession on issueA but they remain fixed on valueD for issueB, issueC, and issueD; their threats are cheap talk this early, so I will hold firm on high-weight issueA and issueB while offering movement on issueC and issueD."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "At t=0.16 it is still early, so I am targeting a high-utility bid while making visible concessions on my lower-weight issues. The opponent’s offers and threats show some movement but not enough to justify giving up my most important issueA or issueB yet, especially since their latest bid is worse for me than their prior issueA concession."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "I targeted a utility around 0.73, making a modest additional concession while still protecting issueA, my most important issue. The opponent’s threats are cheap talk at t=0.18, but their offers show some movement on issueA and issueB while remaining firm on lower values overall, so I am conceding on issueB and issueD while keeping value on issueA and some value on issueC."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "I am targeting a utility around 0.68, conceding further from my last bid by giving the opponent issueC and issueD at valueD while keeping issueA at the value they just offered and compromising on issueB. At t=0.20 there is still time, so I should not accept their low-utility offer, but their latest move on issueA suggests a counter centered on issueA:valueA may be more viable; I treat their repeated deadlock threats as cheap talk and rely on the actual offers."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "I am targeting a moderate-high utility around 0.60 while still holding firm on issueA, my highest-weight issue. At t=0.22 it is still early, but the opponent has shown some willingness to move on issueA and issueB while using threatening messages that are not binding, so I will concede lower-value positions on issueC and issueD and offer a different bid from my last one."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "I am targeting a moderate utility around 0.655, keeping issueA at my top value because it is my highest-weight issue while conceding on lower-weight issues. At t=0.24 there is still time, so I should not accept the opponent’s low-utility offers, though their latest bid shows some concession on issueA/issueB compared with their opening. Their messages are mostly threats and urgency, so I rely on the offer history rather than the wording."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "I am targeting a moderate utility around 0.68 by holding firm on high-importance issueA while conceding fully on lower-weight issueC and issueD. The opponent’s threats appear to be cheap talk, but their actual offers show some movement on issueA and issueB, so I am combining concessions they have already signaled while avoiding my immediately previous bid."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "I am targeting a moderate early-mid utility around 0.66, still well above reservation while making a clearer concession than my earlier high-utility bids. The opponent’s offers remain low for me and their threats look like cheap talk, but they have shown occasional movement on issueA, issueB, and issueC, so I will hold firm on my highest-weight issueA and concede more on lower-weight issues."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "I am targeting a moderate concession bid around 0.679 utility, since we are only at t=0.30 and should not drop too close to the opponent’s low-utility proposals yet. The opponent has made some real movement but still mostly offers valueD-heavy bids, while their threatening messages look like cheap pressure rather than binding constraints. I am holding firm on high-weight issueA, partially conceding issueB, and giving ground on lower-weight issueC and issueD."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "I am targeting a moderate utility around 0.655, conceding mainly on lower-priority issues and partially on issueB while holding firm on issueA, my highest-weight issue. At t=0.32 there is still time, so I should not drop to the opponent’s latest offer, though their bids show some real concession despite repeated walk-away threats. Their messages are aggressive but not binding, so I rely on the offer trend rather than the threats."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "I am targeting a utility around 0.60, conceding further from my prior bid because we are in the mid-game but still preserving issueA, my most important issue. The opponent’s offers are erratic but show some willingness to move on individual issues, while their repeated “walk away” messages look like pressure tactics rather than reliable constraints. I am therefore conceding on lower-weight issues B, C, and D while holding issueA at valueA."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.0 with no opponent offers or messages yet, I am opening with a high-utility bid targeting my maximum possible utility. Since there is no evidence about the opponent’s priorities, I should start by anchoring on my top value for every issue and only concede later if their bids reveal tradeoffs."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "At t=0.02 it is still very early, so I am targeting a near-maximal utility bid rather than making major concessions. The opponent’s first offer is very low for my preferences, especially on high-importance issueE and issueB, and there are no messages indicating any reliable constraint. I will make only a tiny concession by moving issueD from valueE to valueD, which costs me very little while avoiding repeating my exact prior bid."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting a high-utility bid around 0.87, since it is still very early at t=0.04 and there is no need for major concessions yet. The opponent’s offers are very low for me and even worsened on issueE, so I will hold firm on my most important issues while conceding only on low-weight issueC, where they have repeatedly offered valueB."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "At t=0.06 it is still very early, so I am targeting a high-utility bid while making a modest concession from my maximum to avoid repeating my last offer. The opponent’s latest valid offer improved substantially for me on issueB and issueD, but they remain weak on my most important issueE, so I will hold issueE at valueE and concede mainly on lower-weight issueA/issueC."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "At t=0.08 it is still early, so I am targeting a high-utility bid while making selective concessions on lower-weight issues. The opponent has repeatedly offered issueA:valueA and issueC:valueB, so I concede those relatively cheap points while holding firm on my most important issues, especially issueE and issueB."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening bid at t=0, so I should start with my maximum utility offer. All issues have valueC as the top utility (1.00), so I'll bid valueC for everything. My highest weight issue is issueF (0.3), followed by issueC, issueD, issueE (0.2 each), and issueA, issueB (0.1 each). Starting strong with all valueC gives me full utility of 1.0 and sets an anchor for the negotiation."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent opened with all valueA (their best, my worst), giving me utility of 0.2 across all issues = 0.2 total. We're very early (t=0.02), so I should stay near my maximum. I'll hold firm at my top bid (all valueC = utility 1.0) since there's no reason to concede yet. The opponent's opening was their ideal, so this is just the standard opening exchange."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We're very early (t=0.04) and both sides are at their extreme positions. The opponent is offering all valueA (which gives me 0.20 utility on each issue, total ~0.20), while I've been offering all valueC (utility 1.0 for me). Since it's still very early, I should stay close to my ideal but make a small concession to signal willingness to negotiate. I'll concede on the lowest-weight issues (issueA and issueB, weight 0.1 each) by moving to valueB, while holding firm on the higher-weight issues."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is stubbornly offering all-valueA (utility 0.2 for me) and not conceding at all. It's very early (t=0.06), so I should stay near my top utility while making small concessions on low-weight issues. I'll concede issueA and issueB (weight 0.1 each) to valueA since they matter least to me, while holding firm on issueF (0.3), issueC, issueD, issueE (0.2 each) at valueC. This signals willingness to trade on low-importance issues."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent is stubbornly holding at all-valueA (their best offer), which gives me utility of 0.2 across all issues = 0.2 total. We're still very early (t=0.08), so I don't need to concede much yet. My last bid gave away issueA and issueB (low weight, 0.1 each) to valueA, keeping high-weight issues at valueC. I'll try conceding issueC (weight 0.2) to valueB to show movement while protecting issueF (0.3), issueE (0.2), and issueD (0.2) at valueC. This gives me utility: 0.1*0.2 + 0.1*0.2 + 0.2*0.61 + 0.2*1.0 + 0.2*1.0 + 0.3*1.0 = 0.02+0.02+0.122+0.2+0.2+0.3 = 0.864."
+    }
+  ]
+}

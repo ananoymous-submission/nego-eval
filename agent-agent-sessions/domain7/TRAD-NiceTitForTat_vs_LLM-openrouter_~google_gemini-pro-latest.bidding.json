@@ -1,0 +1,42 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "It is the very beginning of the negotiation (t=0.0), and the opponent's starting offer yields minimal utility for me across all issues. To establish a strong anchor and protect my high-value issues, I will counter with my optimal offer. There is no need to make concessions this early in the process."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent repeated their minimum-utility offer (valueF for all issues) at t=0.02. Since it is extremely early in the negotiation, I will make a very small concession on my lowest-weighted issues (issueC and issueD) to signal movement while remaining resolute on the higher-weighted issues (issueA and issueB). This maintains my total utility well above 0.95."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent made a massive concession on issueA and issueB in their last offer, signaling that these issues are likely less critical for them. Since issueA and issueB carry my highest utility weights, I will stand firm on valueA for both, maximizing my potential score. I will reciprocate their movement by making a moderate concession on issueC and issueD."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent significantly conceded on issueB, offering valueB which yields a high utility (0.84) for me. I am keeping issueA at valueA to maintain high utility on my most important issue. For the less important issues (issueC and issueD), I am adjusting my offers moderately to signal a willingness to find a mutually beneficial tradeoff while securely maintaining my total bid utility above 0.85 since it's still very early (t=0.06)."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The negotiation is still very early (t = 0.08), but the opponent has made a major concession by offering my most preferred value for my highest-weight issue (`issueA`: `valueA`). To reciprocate and encourage further cooperation, I will lock in `issueA`: `valueA` and concede on my lowest-priority issue by matching their request for `issueD`: `valueD`. I will hold steady on my mid-weight issues (`issueB` and `issueC`) to keep my overall utility sufficiently high."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The negotiation is still early (t=0.10). The opponent's offers have been steadily improving for me, with their most recent offers including \"valueA\" or \"valueB\" for my high-weight issues (issueA and issueB), which indicates they are willing to concede on my most critical priorities. To reciprocate towards agreement while maintaining high utility (>0.82), I will hold firm on my highest priorities (issueA and issueB) matching their concessions, while offering \"valueD\" on issueC (matching their latest proposal) but keeping issueD moderately favorable to me."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent is consistently offering lower values on issueD and issueC, but has conceded significantly on issueA (offering valueA) and issueB (up to valueB and valueC). My primary goal is to maintain the highest values on the heaviest weighted issues (issueA and issueB). Since it is still early in the negotiation (t=0.12), I will concede completely on issueD to valueE (which they requested) and slightly adjust issueC to valueC, while holding firm on issueA: valueA and issueB: valueB to secure a utility of ~0.82."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent has made steady concessions, particularly returning to issueA: valueA which is my highest priority. Given the time fraction (t=0.14) is still very early, I want to preserve high utility while reciprocating their cooperative moves. I will maintain my positions on high-importance issues A and B (offering valueA and valueB, which they have proposed in recent rounds) and align with their recent preferences on issueC and issueD to reach a strong overall utility around 0.81."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent's latest offer yields a high utility of 0.823, which is actually greater than the utility of my previous bid of 0.808 (due to their swap of issueC to valueC and issueD to valueE). Recognizing this offer is excellent for me this early in the negotiation and grants my highest weighted priorities (issueA and issueB), I will accept it by mirroring the bid to finalize the agreement."
+    }
+  ]
+}

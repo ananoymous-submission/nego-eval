@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening offer at the very beginning of the negotiation (t=0.0). I will bid my most preferred value for every issue to establish a strong anchor and claim maximum utility (1.0). I can evaluate the opponent's preferences and find mutually beneficial concessions in later rounds based on their counteroffers."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just started (t = 0.02) and the opponent responded with a bid that is uniformly the lowest utility for me across all issues. I will make a small concession on my least important issue (issueA) to keep the dialogue moving, while holding firm on my most important issues (issueD, issueC, and issueB). This aims to signal flexibility without sacrificing significant utility."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I will continue making very small concessions on my least important issue, issueA, given that it is extremely early in the negotiation (t=0.04) and the opponent is repeatedly proposing their ideal outcome without conceding. I will propose valueB for issueA while holding firm on my high-priority issues (issueD, issueC, and issueB) to gauge if the opponent breaks their repetition."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent has made a significant concession, notably shifting their position on my high-weight issues (C and D). Since it is still very early in the negotiation (t=0.06), I will make a strategic concession on my least important issue (A) by fully adopting their preferred value for it, while holding firm on issues B, C, and D to maintain a high personal utility. This demonstrates a willingness to compromise while protecting my core interests."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am continuing my strategy of systematic concession on my lower-priority issues while maintaining my highest-priority ones. The opponent previously showed flexibility on `issueC` by offering `valueD`, so I will hold firm on `issueC` and `issueD` to preserve utility. I will now concede further by lowering `issueB` to `valueC` while keeping `issueA` at its most conceded value."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening bid at t=0, so I should start with my maximum utility offer. My top values across all issues are: issueA=valueF (1.0), issueB=valueF (1.0), issueC=valueF (1.0), issueD=valueF (1.0). This gives me the highest possible utility of 1.0. Early in negotiation, I should anchor high and concede later."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent opened with their best offer (all valueA), which gives me very low utility. We're very early in the negotiation (t=0.02), so I should stay close to my top-utility bid. I'll maintain a strong position but make a tiny concession on issueA (my least important issue) to signal willingness to negotiate, while keeping my high-value choices on the more important issues."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent is consistently offering their best bid (all valueA), which is my worst outcome. They haven't conceded at all. It's very early (t=0.04), so I should stay firm near my top utility. I'll make a small concession on issueA (low weight) while holding firm on the high-weight issues (C and D). I'll try valueD for issueA (slight concession) and keep issueB at valueF, issueC at valueF, issueD at valueF."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is consistently offering all-valueA, which gives me very low utility (0.2 across all issues). They seem to be holding firm at their maximum position. It's still very early (t=0.06), so I should stay near my top bids. I've been conceding on issueA (my least important issue at 0.1 weight) while holding firm on the others. I'll continue that strategy - maybe concede slightly on issueB (next least important at 0.2) while keeping issueC and issueD at valueF."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent is stubbornly offering all valueA every single time, which gives me very low utility. It's still very early (t=0.08), so I don't need to concede much. I'll maintain high utility on my important issues (issueC and issueD) while making small concessions on lower-weight issues. I need to fix the formatting error from last attempt - ensure all four issues are properly specified as separate keys."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent has been consistently offering all-A values (their best offer gives me very low utility ~0.20 across all issues), showing no concession at all. It's still very early (t=0.10), so I shouldn't panic. My highest-weight issues are issueC and issueD (0.3 each), so I should hold firm on those. I'll make a small concession on issueA (already low weight) and issueB while keeping issueC and issueD at their top values. I'll try issueA: valueA (full concession on low-weight issue) and keep issueB at valueE to differentiate from my last bid."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent has been completely stubborn, offering all valueA every single turn, which gives them maximum utility but is the worst possible outcome for me. Since we're still very early (t=0.12), I should not panic and make large concessions. The opponent seems to be using an extreme anchoring strategy. I'll continue to hold firm on my high-weight issues (issueC and issueD) while making small concessions on lower-weight issues. Let me try conceding issueB further while keeping issueC and issueD at valueF."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent has been consistently offering all valueA across every turn, showing no concession whatsoever. This is very early (t=0.14), so I don't need to panic, but I should continue making small concessions on low-importance issues while holding firm on issueC and issueD (both 0.3 importance). I've already conceded issueA fully and I'm conceding issueB gradually. My current bid at t=0.12 gave issueB: valueC. I'll now try conceding issueB to valueB while keeping issueC and issueD at valueF to maintain high utility on the most important issues."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent has been consistently offering all valueA across all rounds, showing no concession at all. They appear to be playing an extremely stubborn strategy. We're still early in the negotiation (t=0.16), so I don't need to panic. My highest-weight issues are issueC and issueD (0.3 each), so I should hold firm on those. I've been conceding on issueA and issueB progressively. Now I've reached the minimum on issueA (valueA) and near-minimum on issueB (valueB). Let me next try conceding issueB to valueA (minimum) while keeping issueC and issueD at valueF to see if that moves the opponent, but actually since they keep offering all valueA, I should try a different approach - perhaps concede issueB fully to valueA while keeping my high-value issues, to signal willingness to compromise on low-weight issues."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent is stubbornly offering all valueA every single time, showing no concession whatsoever. We're only at t=0.18, so there's plenty of time. I've been conceding on issueA and issueB (low weight issues), but I should hold firm on issueC and issueD (my highest weight issues at 0.3 each). I've already fully conceded issueA and issueB (both at valueA), so my current offer gives me 0.1*0.20 + 0.2*0.20 + 0.3*1.00 + 0.3*1.00 = 0.02 + 0.04 + 0.30 + 0.30 = 0.66. I should start making small concessions on issueC or issueD now, but since the opponent isn't moving at all, I'll try conceding slightly on issueC (moving from valueF to valueC, still 0.93 utility) to signal willingness while maintaining good utility."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent has been consistently offering all valueA across every turn, showing no concession whatsoever. We're at t=0.20 and still early. My highest-weight issues are issueD (0.3) and issueC (0.3), so I should protect those. I've been conceding issueA and issueB significantly. Let me try conceding a bit on issueC while keeping issueD at valueF, to signal flexibility without giving up too much utility. I'll offer issueC: valueD (0.79 utility) instead of valueC last time, to avoid repeating, while holding issueD: valueF."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has been completely rigid, offering all-valueA every single time. This is clearly a hardball strategy. My utility for all-valueA is very low (0.2 for each issue × weights = 0.2). I've been gradually conceding on issueA and issueB already. Now I should continue making small concessions on issueC while holding firm on issueD (my highest weight issue alongside issueC). I've moved issueC from valueF down to valueD; next I'll try valueE for issueC to vary my bid and show movement, while keeping issueD at valueF."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent has been consistently offering all valueA across every single turn, showing no concession whatsoever. This is a hardball strategy. I've been conceding heavily on issueA and issueB, and now I need to start conceding on issueC while holding firm on issueD (my highest weight issue). I've been offering valueF for issueD throughout - I should maintain that. For issueC, I've been moving down: F, C, D, E... let me try valueF for issueD still, and try conceding more on issueC. Actually at t=0.24 I should try valueB for issueC next (moving toward opponent's valueA), while keeping issueD at valueF. My utility: 0.1*0.2 + 0.2*0.2 + 0.3*0.68 + 0.3*1.0 = 0.02 + 0.04 + 0.204 + 0.3 = 0.564."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent has been completely stubborn, offering (valueA, valueA, valueA, valueA) every single turn. I've been conceding steadily across issueA and issueB and now issueC, but the opponent shows zero movement. We're only at t=0.26, so there's still time. I should continue my systematic exploration - I've now tried all values for issueC while keeping issueD at valueF. Next logical step is to try conceding issueC to valueA (their preferred) while keeping issueD at valueF, or start moving on issueD. Let me try (valueA, valueA, valueA, valueF) - that's the minimum concession on the high-weight issueD issue while giving them everything else. My utility would be: 0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*1.00 = 0.02 + 0.04 + 0.06 + 0.30 = 0.42. That's still decent. Let me make this offer."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent has been rigidly offering all valueA across every single turn (14 times in a row), never conceding at all. This is their apparent anchor strategy. My last offer gave them everything except issueD (valueF). I need to start conceding on issueD now since that's the last high-value issue I'm holding. I should try valueE on issueD (utility 0.95 for me vs valueA at 0.20), which still gives me high utility (0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*0.95 = 0.02+0.04+0.06+0.285 = 0.405) while signaling willingness to concede. Since we're still early (t=0.28), I won't go all the way down yet."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent has been stubbornly offering all valueA throughout the entire negotiation (t=0.02 to t=0.30), showing zero concession. Their ideal (all valueA) gives me utility: 0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*0.20 = 0.20. I've been conceding heavily on issueA, issueB, and issueC, and now I'm on issueD. My last offer was issueD: valueE. I should continue conceding on issueD next, moving to valueD, while keeping the rest at valueA (which matches opponent's preference). This gives me: 0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*0.80 = 0.02+0.04+0.06+0.24 = 0.36, which is still better than the reservation value of 0."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent has been stubbornly offering all valueA across every issue for the entire negotiation, showing zero concession. They seem to want their best outcome (all A). I've been systematically conceding on lower-weight issues. Now at t=0.32, I'm down to offering just issueD with any value above A. My last offer was issueD: valueD (utility 0.80 for me). I should continue conceding on issueD since it's my last holdout, moving to valueC (0.60 utility for me). The opponent is clearly not budging at all, so I need to consider whether to keep conceding or hold firm for a while. At t=0.32, there's still time left - I'll offer issueD: valueC which gives me 0.3*0.60 = 0.18 utility vs 0 for no deal."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent has been consistently offering all valueA across every single turn, showing no concession whatsoever. I've been conceding significantly, now down to offering issueD: valueC (utility 0.60) with everything else at valueA. My current offer utility is: 0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*0.60 = 0.02+0.04+0.06+0.18 = 0.30. The opponent seems completely anchored at all-valueA (utility to me = 0.20). I should continue conceding on issueD (my highest weight issue that I've been working down) — next step would be valueB (0.51) but I already offered valueC at t=0.32. Let me try issueD: valueB to show continued movement, while keeping all else at valueA. This gives utility: 0.1*0.20 + 0.2*0.20 + 0.3*0.20 + 0.3*0.51 = 0.02+0.04+0.06+0.153 = 0.273. The opponent still beats reservation value at all-valueA, so I need to keep making small concessions to signal good faith while not rushing."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent has been consistently offering all valueA across every single turn - they appear completely stuck at their position. I've been systematically conceding through all issues and values, and I'm now at a point where offering all valueA myself would give me very low utility (0.2 on all issues = 0.2). I've tried everything down to issueD: valueB, and the opponent still won't budge. Since offering all valueA matches the opponent's demand exactly, they should accept it. However, my utility would be 0.1*0.2 + 0.2*0.2 + 0.3*0.2 + 0.3*0.2 = 0.2, which is still better than 0 (no deal). At t=0.36, I should accept their offer or make the all-valueA bid to finally reach agreement. Let me offer all valueA to get some deal done."
+    }
+  ]
+}

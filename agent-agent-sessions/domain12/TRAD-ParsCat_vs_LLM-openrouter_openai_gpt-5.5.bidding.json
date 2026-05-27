@@ -1,0 +1,30 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.00 there is no time pressure to concede, so I am targeting my maximum-utility bid. The opponent opened with all valueC, which is the worst outcome for my preferences and provides no evidence of concession yet, so I will anchor on all valueA across the valid issues."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "I am targeting a very high-utility bid because it is still the start of the negotiation at t=0.02, and the opponent has repeated an all-valueC offer that gives me very low utility with no concession yet. To avoid simply repeating my previous all-valueA bid, I make a small concession on a low-weight issue while holding firm on the higher-weight issues A, B, and C."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting a high-utility bid around 0.96 because it is still very early in the negotiation and the opponent has not conceded from their all-valueC position, which is very poor for me. To avoid simply repeating my last offer, I am rotating the small concession from issueD to another low-weight issue while holding firm on the higher-weight issues A, B, and C."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a very high-utility bid because it is still very early in the negotiation, and the opponent has not conceded at all from their all-valueC position, which is low utility for me. To avoid simply repeating my last offer while making only a small concession, I am conceding on a low-weight issue and holding firm on the higher-weight issues A, B, and C."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am targeting a high early-stage utility (about 0.922) because time is still very early at t=0.08 and there is no need to make large concessions yet. The opponent has begun conceding on issueB, issueD, issueE, and issueF, while still holding issueA and issueC at my worst values, so I will hold firm on my high-weight issues A/B/C and make modest concessions on lower-weight D/E."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a high early-game utility around 0.88, since time is still only t=0.10 and there is no need to concede heavily yet. The opponent has started moving away from all-valueC bids and their latest offer gives me some value on issueC, issueD, and issueE, so I will reciprocate on lower-weight issueE/issueF while holding firm on the high-weight issueA and issueB."
+    }
+  ]
+}

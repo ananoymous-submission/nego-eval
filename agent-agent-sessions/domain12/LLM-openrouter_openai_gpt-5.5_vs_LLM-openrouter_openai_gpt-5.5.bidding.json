@@ -1,0 +1,46 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.00 there is no time pressure to concede, so I am targeting my maximum-utility bid. The opponent’s opening offer gives me the lowest value on every issue, so there is no useful concession signal yet; I will counter with a strong bid using only valid issues and values."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent has moved from an all-valueC offer to conceding on issueA, raising my utility from about 0.20 to 0.323, but we are still extremely early at t=0.02 so I should target a high-utility bid. To avoid simply repeating my prior all-valueA bid, I make a small concession on a low-weight issue while holding firm on the most important issues."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "At t=0.04 it is still very early, so I am targeting a high-utility bid while making a small concession to avoid simply repeating my last offer. The opponent has only conceded slightly from all valueC, and their offers still give me low utility, so I should hold firm on my highest-weight issues A, B, and C while conceding a low-weight issue."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a very high utility bid (~0.961) because it is still very early (t=0.06), so there is no need to make major concessions yet. The opponent has improved from all valueC to concessions on issueA and issueB, but their latest offer is still low for me, so I will hold firm on my high-weight issues A/B/C and vary a low-weight concession to avoid repeating my prior bid."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "At t=0.08 it is still early, so I am targeting a high-utility bid for myself while making a visible concession on lower-weight issues. The opponent has moved from all valueC to conceding issueA and issueB to valueA, but they are still holding issueC-issueF at valueC, so I will hold firm on my most important issues A-C and offer valueB on the lower-weight D-F to explore tradeoffs."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a high utility bid around 0.84 because it is still early at t=0.10, so there is no need to concede on the high-weight issues A, B, and C yet. The opponent has improved on issueA and issueB but continues to hold issueC and the lower-weight issues at valueC, so I am conceding first on a low-weight issue while keeping my main priorities intact."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "I am targeting a high utility around 0.84 by holding firm on the most important issues A, B, and C while varying concessions on the lower-weight issues. It is still early at t=0.12, so I do not need to match the opponent’s latest bid, but their offers show some movement on A and B while they keep C/D/E/F at valueC, so I am testing a concession on a low-weight issue without giving up issueC."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "I am targeting a still-high utility around 0.80 because it is early in the negotiation, so there is no need to concede on the high-weight issueC yet. The opponent has clearly moved toward my preferences on issueA and issueB but continues to hold issueC-F at valueC, so I concede further on lower-weight issues D and E while keeping A/B/C strong. There are no opponent messages to weigh, and all prior offers used valid domain values."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "I am targeting a solid early-game utility around 0.76, conceding mainly on the lower-weight issues D/E/F while holding my most important issues A/B/C at valueA. The opponent’s bids show real movement on issueA and issueB and most recently some movement on issueC, while they consistently keep D/E/F at valueC, so this counter gives ground where they appear to care while preserving my core value."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "I am targeting a solid positive utility around 0.68 by holding firm on the most important issues A and B while conceding issueC to valueB and leaving the lower-weight issues D/E/F at valueC. Time is still early, but the opponent has steadily conceded from all valueC toward my preferred values on A, B, and now C, and their latest valid offer signals this package may be acceptable. With no opponent messages, I rely only on the offer pattern and avoid invalid issues or values."
+    }
+  ]
+}

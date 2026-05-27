@@ -1,0 +1,34 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "This is the opening bid, so I should start with my maximum utility offer. My top values are: issueF (valueC, weight 0.3), issueE (valueA, weight 0.2), issueB (valueC, weight 0.2), issueA (valueC, weight 0.1), issueC (valueC, weight 0.1), issueD (valueB, weight 0.0). This gives me utility of 1.0 across all weighted issues. Starting strong at t=0 is appropriate since there's no time pressure yet."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent's offer gives me utility: issueA(valueA)=0.1*0.66=0.066, issueB(valueB)=0.2*0.35=0.07, issueC(valueA)=0.1*0.20=0.02, issueD(valueA)=0.0*0.20=0, issueE(valueA)=0.2*1.00=0.20, issueF(valueA)=0.3*0.20=0.06 → total ≈ 0.416. My top bid gives ~1.0. It's very early (t=0.02), so I should stay close to my ideal but make a small concession. The opponent seems to want valueA on most issues; issueD has 0 weight for me so I can concede that freely. I'll hold firm on my high-weight issues (F, E, B) and keep my best values there."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We're very early (t=0.04), so I can stay close to my optimal bid. The opponent keeps offering issueF: valueA (my worst value on my most important issue, weight 0.3), and issueB: valueB (moderate for me). They seem to want issueE: valueA which is also my best value, so that's aligned. I should hold firm on issueF: valueC and issueB: valueC (my top priorities), while I can slightly concede on lower-weight issues like issueD. I'll keep my near-optimal bid but vary issueD slightly."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "We're very early (t=0.06), so I can still hold firm near my optimal bid. The opponent keeps offering issueF: valueA, which is terrible for me (0.2 utility on my highest-weight issue). They seem to care about issueF: valueA and issueE: valueA. Since issueE: valueA is also my top value, that's aligned. I should hold firm on issueF: valueC (my most important issue) and issueB: valueC, while I can consider small concessions on lower-weight issues like issueA and issueC. Let me slightly vary my bid by conceding on issueC (valueB instead of valueC) to signal some movement, while keeping my high-weight issues intact."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent has been consistently offering issueF: valueA (my worst value on my most important issue), issueB: valueB (moderate for me), and issueE: valueA (my best). Their latest offer switched issueF to valueB, which is a slight concession on my top issue. I should stay near my optimal bid but make small concessions on low-weight issues. At t=0.08 we're still early, so I'll hold firm on issueF (valueC) and issueE (valueA), and concede slightly on issueC (already moved to valueB) and keep issueB at valueC. I'll vary issueD to avoid exact repetition."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent has been consistently preferring valueA for issueF and issueE, while I heavily weight issueF (0.3) and issueE (0.2) - both at valueC and valueA respectively. The opponent's latest offer switched issueB to valueA (worse for me) but kept issueE at valueA (good for me). I should hold firm on my high-weight issues (issueF: valueC, issueE: valueA, issueB: valueC) while making small concessions on lower-weight issues. At t=0.1, it's still early so I can stay near my top utility. I'll concede issueA to valueA (opponent seems to want this, and my weight is low) while keeping my key issues."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent has been consistently preferring valueA for issueF (their most recent offers all have issueF: valueA), while I heavily weight issueF (0.3) and prefer valueC there. The opponent seems to care about issueF: valueA and issueE: valueA. I should hold firm on issueF: valueC and issueE: valueA (both high weight for me). The opponent just moved to issueC: valueB which is a concession toward me. I can concede on issueA (low weight, 0.1) and issueB slightly, but I need to keep issueF: valueC and issueE: valueA. Let me offer a bid that maintains my high-weight issues while conceding on lower-weight ones like issueA and issueC."
+    }
+  ]
+}

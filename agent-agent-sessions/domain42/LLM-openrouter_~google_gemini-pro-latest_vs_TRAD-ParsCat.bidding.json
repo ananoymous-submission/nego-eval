@@ -1,0 +1,30 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "Since this is the very beginning of the negotiation, I will start by offering my most preferred values across all issues to set a strong anchor. This strategy guarantees my maximum potential utility configuration of 1.0 and allows me to see the opponent's counteroffer before making any concessions."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just started (t=0.02). The opponent's first offer provides very low utility across my significantly weighted issues. I will make a minor concession on issues A and D, where my utilities for 'valueD' are still extremely high, to signal a willingness to negotiate while protecting my most critical issues (E and B)."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The negotiation is in the very early stages (t=0.04). The opponent has retreated on `issueE` but held firm on `valueB` for `issueC`. Since `issueC` carries low weight for me (0.1) and `valueB` still provides a reasonable utility (0.73), I will concede entirely on `issueC` to signal cooperation. I will maintain my positions on high-importance issues like `issueE`, `issueD`, and `issueB` to protect my core utility, keeping my total target utility well above 0.8."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The current time is very early (t=0.06), but the opponent is bidding aggressively, making minimal to negative concessions. To explore potential trade-offs while protecting my core utility, I will hold firm on my highest-priority issues (issueB and issueE) but attempt testing new variations on issueD and issueE. I am maintaining the shared preference `valueB` for `issueC` to signal cooperativeness, hoping the opponent will begin conceding in return."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The time is still very early (t=0.08), but the opponent remains completely inflexible on issues A, B, D, and E (offering valueA, which is extremely detrimental to my utility). Since my importance weights on issueA and issueC are the lowest (0.1 each), I will concede entirely on those issues to match the opponent's preferred values (issueA: valueA, issueC: valueB). This maintains my focus on securing high utility on my higher-weight issues (issueB, issueD, issueE), where I will propose near-top values to protect my position while signaling a willingness to compromise."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent is consistently repeating the same offer that gives me very low utility for the most important issues (B, D, E). Since we are still very early in the negotiation (t=0.10), I will keep conceding on the issues that are less important to me but clearly important to them (issues A and C, where I'm offering their exact requested values). I will make a slight concession on issue B while holding firm on the highest-weight issues (D and E)."
+    }
+  ]
+}

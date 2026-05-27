@@ -1,0 +1,98 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.00, there is no time pressure to concede, so I am targeting maximum utility by proposing my highest-valued option on every issue. The opponent’s only offer is all valueF, which is very low utility for me and shows no concession pattern yet, so I will anchor at my ideal bid."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "At t=0.02 it is still very early, so I am targeting a very high-utility bid while making only a small concession to avoid repeating my exact previous offer. The opponent has improved from all valueF to valueD/valueC on the two most important issues for me, which signals some willingness to concede, but not enough yet to justify major movement from my side. I concede only on low-weight issueD while holding issueA, issueB, and issueC at my best values."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "At t=0.04 it is still very early, so I am targeting a high-utility bid while showing a small concession from my prior offer. The opponent improved from all valueF to issueA=valueD and issueB=valueC but then repeated the same low-utility offer for me, so I will hold firm on the most important issues A and B while conceding on lower-weight issues C and D."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a very high-utility bid around 0.94 because it is still very early at t=0.06, so there is little need to make large concessions yet. The opponent has improved from all valueF to issueA:valueD/issueB:valueC but has then repeated the same offer, which gives me only moderate utility, so I will concede only on lower-weight issues while holding issueA and issueB at valueA."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am targeting a high utility bid around 0.92 because it is still very early in the negotiation and there is no need for major concessions yet. The opponent initially improved from all valueF to issueA:valueD/issueB:valueC, but their latest offer moved issueA back to valueE, so I do not read a clear upward concession trend. I will concede only on the lowest-weight issueD while holding firm on the more important issueA and issueB."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a high-utility bid around 0.90 because it is still very early at t=0.10, so I should not concede much on the most important issues A and B. The opponent initially improved from all valueF to a bid worth about 0.47 to me, but then worsened issueA to valueE, so their concessions are not consistently increasing; I will concede mainly on low-weight issueD while holding issueA and issueB at my best values."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "I am still targeting a high-utility bid because the negotiation is early (t=0.12) and the opponent’s valid offers remain low for me, around 0.40–0.47 utility, with no clear upward concession trend. To avoid repeating my last bid while making a low-cost concession, I concede issueD further to valueF, since issueD has the lowest weight for me, while holding firm on the high-importance issueA and issueB."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "I am targeting a high-utility bid around 0.856 since it is still early at t=0.14 and there is no need to make major concessions yet. The opponent improved from the initial all-valueF offer but has since held around issueA valueE/valueD, issueB valueC, issueC valueF, issueD valueF, so I will concede further on my lower-weight issueC while holding firm on the higher-weight issueA and issueB."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "I am targeting a still-high utility bid (about 0.824) because it is early at t=0.16 and the opponent’s valid offers have not improved for me; their best was around 0.472 and recent offers are lower. Since they repeatedly offer issueC and issueD at valueF, I concede further on lower-weight issueC while holding firm on the most important issues A and B."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "I am targeting a still-high utility around 0.79, since it is early at t=0.18 and the opponent has not meaningfully improved their offers to me beyond roughly 0.40 utility. Their repeated bids suggest they strongly want issueC and issueD at valueF, so I concede further on those lower-weight issues while holding firm on the more important issueA and issueB."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "At t=0.20 I am still targeting a relatively high utility bid, around 0.76, since there is substantial time left and the opponent’s offers have not improved for me recently. The opponent has consistently pushed issueC and issueD to valueF while only offering weak concessions on issueA/issueB, so I will concede fully on the lower-weight issueC and issueD but hold firm on the more important issueA and issueB."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "I am targeting a utility around 0.71, which is still strong for me at t=0.22 while adding a meaningful concession compared with my last bid. The opponent has stayed near issueA=valueE, issueB=valueC, issueC=valueF, issueD=valueF, so I am holding firm on my most important issueA while conceding fully on issueC/issueD and partially on issueB to move closer without rushing too much this early."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "I am targeting a still-strong utility of about 0.664 while making a meaningful early concession on issueB and already giving the opponent their apparent preferred low outcomes on issueC and issueD. At t=0.24 there is some room to concede, but not enough pressure to give up heavily weighted issueA; the opponent has mostly held firm around poor offers for me and even worsened issueB in the latest bid, with no messages to justify further concession."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "I am targeting a utility around 0.62, conceding modestly from my last offer while still protecting issueA, my highest-weight issue. The opponent’s offers have not improved for me overall and their latest bid is worse for my utility than earlier ones, but they seem to be pushing especially on issueB/issueC/issueD, so I concede issueB one step while holding issueA firm at valueA."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "At t=0.28 I am still targeting a solid positive utility while continuing the concession path, especially on lower-priority issues already moved to valueF. The opponent’s offers have not improved for me overall; they have held issueC/issueD at valueF and recently pushed issueB down to valueE, so I will concede issueB while holding firm on the highest-weight issueA."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "I am targeting a utility around 0.55: the bid gives me 0.552 while still making a visible concession on the most disputed high-weight issueA. At t=0.30 it is still early-mid negotiation, so I should not drop to the opponent’s latest low-utility offer; their bids show they hold issueC and issueD at valueF and have recently pushed issueA/issueB toward valueE, so I preserve value on issueB while conceding issueA one step."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "I am targeting a utility around 0.52 by holding firm on issueA, my highest-weight issue, while conceding issueB, issueC, and issueD to valueF, which the opponent has repeatedly pushed for. At t=0.32 there is still time, but the opponent’s recent offers have become worse for me rather than better, so I will avoid conceding issueA yet while making a new non-identical bid aligned with their signals. No natural-language messages were provided, so I rely only on the offer pattern."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "I am targeting a utility just above 0.50: issueA is my highest-weight issue, so I only concede it one step, while keeping substantial concessions on the lower-weight issues. At t=0.34 there is some pressure to move beyond my previous exact bid, and the opponent’s recent offers suggest they are insisting on valueF for issueB/issueC/issueD and valueE on issueA, so this bid moves toward them without giving up too much."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "At t=0.36 I am targeting a moderate utility around 0.45–0.50 rather than accepting the opponent’s current low-value offer to me. The opponent has consistently pushed issueC and issueD to valueF and recently issueB to valueF, so I concede those while holding issueA above their demand because it is my most important issue."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "I am targeting a utility of about 0.39: issueB, issueC, and issueD are already fully conceded, so the only remaining movement is a limited concession on the high-weight issueA. At t=0.38 there is still time, but the opponent has been holding near issueA:valueE and issueB/C/D:valueF, so I will move from my last bid without going all the way to their last offer. No natural-language messages were provided, so I am relying only on the offer pattern."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "I am targeting a modestly better-than-opponent-current utility around 0.33, since t=0.40 is mid-game and I should keep conceding but not drop all the way to their low latest offer. The opponent has settled on issueB/C/D at valueF and issueA around valueE, so I concede the lower and medium issues fully while holding issueA one step above their demand because it is my highest-weight issue."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "I am targeting a utility around 0.305, conceding further from my last offer while avoiding simply accepting the opponent’s current low-utility bid. The opponent has repeatedly pushed toward issueA=valueE and issueB=valueF, but they previously offered issueB=valueE, so I will try a compromise they have already signaled may be feasible while preserving a bit more value for me."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "I am targeting a utility around 0.26 by matching the opponent’s most recent valid offer, since they have repeatedly held firm at issueA=valueE and issueB/issueC/issueD=valueF. At t=0.44 there is still time, but their recent offers show little movement, so conceding on issueB from my last bid may improve agreement chances while keeping positive utility."
+    }
+  ]
+}

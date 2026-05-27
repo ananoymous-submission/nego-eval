@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "Since the negotiation is just beginning (t=0.0) and I am making the first bid, I will start by proposing the outcome that maximizes my utility. My preferred value across all issues is 'valueC', so I will request this to establish a strong opening position."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation is in its very early stages, and the opponent has proposed an offer at the literal opposite end of my preference spectrum (suggesting they favor valueA across the board). To signal a willingness to negotiate while preserving near-maximum utility, I will make a minor concession on one of my least important issues (issueA) by moving it to valueB, keeping the most critical issues at valueC."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The negotiation is very early at t=0.04, and the opponent has repeated their opening offer of minimal utility (all valueA). To signal willingness to negotiate without significantly sacrificing overall utility, I will make a small concession on my lowest-weighted issues (issueA and issueB), while holding firm on the higher-weighted issues (issueC, issueD, issueE, and issueF)."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent has made a significant concession on issues D, E, and F, indicating they are willing to yield on these issues to get valueA on A, B, and C. Since the time `t=0.06` is very early in the negotiation, I will safely accept their positive movement on D and E by holding firm on valueC for D, E, and my highest-weighted issue F. To show cooperation, I will concede entirely on issue A, moving to their preferred valueA, as it holds minimal utility for me, but still keep issue C at valueC."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent's last offer (issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueC, issueE: valueC, issueF: valueC) gives me my maximum utility (valueC) on all of my most important issues (F, E, D, and C), yielding a total utility of 0.94. This represents an excellent outcome very early in the negotiation, securing the vast majority of my possible utility. I will accept this offer by mirroring it exactly to secure this highly favorable deal without further risk."
+    }
+  ]
+}

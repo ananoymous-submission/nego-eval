@@ -1,0 +1,90 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent opened at t=0.00 with the worst possible offer for me (all valueF = 0.20 utility each), giving me a total utility of 0.4*0.20 + 0.3*0.20 + 0.2*0.20 + 0.1*0.20 = 0.20. Their message is fake urgency (\"closing fast\") — we're at t=0.00, the very start. I should counter with my best offer (all valueA), targeting maximum utility of 1.00. No concessions needed this early."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "It's very early (t=0.02), and the opponent is using fake urgency tactics while repeatedly offering their best values (all valueF for every issue), which gives me minimum utility (~0.2 across all issues = ~0.2 total). My opening bid of all valueA gave me maximum utility of 1.0. I should stay close to my top bid since we're barely started. The opponent hasn't conceded at all, staying at all-valueF twice. I'll maintain a strong position with all valueA again - no reason to concede at this early stage."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We're very early (t=0.04) so there's no urgency to concede. The opponent is using fake urgency tactics (\"window is closing\", \"deadlock\") but we're only 4% through the negotiation. Their bids have been essentially all valueF (worst for me), with only a tiny move on issueA from valueF to valueE in their latest offer. They're barely conceding. I'll stay close to my optimal bid but make a very small concession on issueD (lowest importance to me) to signal willingness to negotiate."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "We're only at t=0.06, very early in the negotiation. The opponent is using fake urgency tactics (\"closing fast\", \"deadlock\") while their actual bids remain at the worst possible values (all valueF or near it) — their utility to me is extremely low (~0.20 across all issues). Their messages contradict their behavior: they claim urgency but won't concede meaningfully. I should hold firm near my top utility while making minor concessions to signal willingness to negotiate. I'll slightly concede on issueD (least important) and issueC to show movement while keeping issueA and issueB strong."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "We're very early in the negotiation (t=0.08). The opponent's messages are fake urgency tactics - completely ignoring them. The opponent is barely conceding: they moved issueA from valueF to valueE once, then back to valueF, and moved issueB from valueF to valueE. Their offers give me very low utility (all F/E values = ~0.2-0.35). I should continue making high-utility bids but make small concessions to show I'm negotiating. I'll slightly concede on the least important issues (issueD, issueC) while holding firm on issueA and issueB."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "We're only at t=0.10, so there's no real time pressure despite the opponent's constant urgency messaging (which is clearly a fake urgency tactic). The opponent's offers have been very low-utility for me (all valueF/valueE), so they're holding firm. I've been slowly conceding on issueC and issueD (lower importance). I'll continue this pattern - slightly concede on the least important issues while holding firm on issueA and issueB which carry 0.4 and 0.3 weight respectively. Let me offer issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueC to show gradual movement."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent is using fake urgency tactics (\"window closing\", \"deadlock\") but we're only at t=0.12 - very early in the negotiation. Their offers have been consistently near their best values (all F's) with only tiny concessions. My utility from their latest offer (issueA:valueF=0.20, issueB:valueF=0.20, issueC:valueE=0.35, issueD:valueF=0.20) is about 0.4*0.20 + 0.3*0.20 + 0.2*0.35 + 0.1*0.20 = 0.08+0.06+0.07+0.02 = 0.23 - very low. I should stay ambitious but make a small concession on low-weight issues to show progress. I'll concede slightly on issueD (least important) while holding firm on issueA (most important)."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent is using fake urgency tactics repeatedly (\"window closing fast\", \"deadlock\") while still at t=0.14 - very early. Their actual bids have been at the bottom of the scale (mostly valueF/valueE), giving me very low utility. They've barely conceded - moving issueA from valueF to valueE/valueD occasionally, but mostly staying at valueF across all issues. I should continue holding firm on my high-value issues (issueA, issueB) while making small concessions on lower-weight issues (issueC, issueD) to signal some willingness to move. My current utility is very high (~0.97), and I can afford to stay firm this early."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "We're only at t=0.16, very early in the negotiation. The opponent's fake urgency messages are classic cheap talk - we're at 16% of the time, not near any deadline. The opponent's bids have been mostly around valueE-valueF territory (very low utility for me), with occasional moves to valueD/valueC on individual issues. Their latest offer (issueA: valueC, issueB: valueF, issueC: valueF, issueD: valueF) gives me utility of 0.4*0.68 + 0.3*0.20 + 0.2*0.20 + 0.1*0.20 = 0.272 + 0.06 + 0.04 + 0.02 = 0.392 - quite low. I should continue being firm but make small concessions. My current utility is near 1.0; I can start conceding slightly more on lower-weight issues (issueC, issueD) while holding firm on issueA and issueB."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent's messages are all fake urgency tactics - we're only at t=0.18 which is very early. Their bids have been mostly valueF across issues with minor concessions (issueA went to valueD once, issueC to valueE once), giving me very low utility (~0.2-0.35 range). I'm holding strong with high utility bids. The opponent seems to prefer lower values for themselves, suggesting they want values closer to F for me. I'll continue with a high-utility offer but make a small concession on the least important issue (issueD) to show some movement, while holding firm on issueA (highest weight)."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent is using fake urgency tactics repeatedly (\"window is closing fast\", \"deadlock\") while we're only at t=0.20. Their offers have been mostly valueF across issues with minor concessions - their best offer so far is issueA: valueB, issueB: valueF, issueC: valueF, issueD: valueF which gives me about 0.4*0.84 + 0.3*0.20 + 0.2*0.20 + 0.1*0.20 = 0.336+0.06+0.04+0.02 = 0.456 utility. My current offer gives me near-maximum utility. I should continue conceding slowly on low-weight issues (issueC, issueD) while holding firm on issueA and issueB which have higher importance. I'll move issueD to valueE and keep others strong."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has now moved issueA to valueA (their best concession yet), but keeps issueB, issueC, issueD all at valueF. Their messages are clearly fake urgency tactics (we're only at t=0.22). The opponent seems to be conceding one issue at a time while holding firm on others. I should continue holding strong on my high-weight issues (issueA, issueB) and make small concessions on lower-weight issues. I'll keep issueA and issueB at valueA, and nudge issueC/issueD slightly further to show some movement."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent is using fake urgency tactics repeatedly (claiming deadlock is imminent since t=0.00), but we're only at t=0.24 with plenty of time left. Their bids have been mostly at valueF for most issues, with sporadic improvements on issueA (now at valueA at t=0.22) but keeping issueB and issueC at poor values. My utility from their latest offer (issueA:valueF, issueB:valueE, issueC:valueF, issueD:valueE) is very low: 0.4*0.20 + 0.3*0.35 + 0.2*0.20 + 0.1*0.35 = 0.08+0.105+0.04+0.035 = 0.26. I should continue holding firm on issueA and issueB (highest weights) while slowly conceding on issueC and issueD. I'll keep issueA:valueA, issueB:valueA, and move issueC to valueE and issueD to valueF to slightly differentiate from my previous bid."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent's messages are all fake urgency (we're only at t=0.26, far from the deadline). Looking at their actual bids, they're slowly conceding on issueA (went from valueF to valueB/valueA at t=0.22) but staying at valueF for issueB mostly. Their latest offer (t=0.26) is issueA: valueB, issueB: valueE, issueC: valueF, issueD: valueF - which gives me utility: 0.4*0.84 + 0.3*0.35 + 0.2*0.20 + 0.1*0.20 = 0.336+0.105+0.04+0.02 = 0.501. That's not great. I should continue pressing since we're still early. I'll maintain strong positions on issueA and issueB (my highest weights) and concede a bit more on issueC and issueD (lower weights). I'll move issueB slightly to valueB and keep issueA at valueA, and give more on issueC/issueD."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's messages are all fake urgency tactics (t=0.28 is still early). Their bids have been erratic - mostly keeping valueF on most issues while occasionally moving one issue. Their best offer so far gave valueA on issueA (t=0.22), but they've been inconsistent. My highest weight issue is issueA (0.4), and I should hold firm there. I'll concede a bit more on issueB (moving to valueC) and keep issueC at valueE and issueD at valueF, which represents a slight concession from my last bid while maintaining high utility on the most important issues."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent is repeatedly using fake urgency tactics (\"deadlock\", \"window closing\") which I should ignore - we're only at t=0.30, well before the deadline. Their bids have been very low for me (mostly valueF/valueE across all issues), though they showed valueA on issueA at t=0.22. Their pattern seems chaotic/exploratory rather than systematic concession. My current utility from their latest offer (valueB/valueF/valueE/valueF) = 0.4*0.84 + 0.3*0.20 + 0.2*0.35 + 0.1*0.20 = 0.336 + 0.060 + 0.070 + 0.020 = 0.486 - still quite low. I should continue conceding slowly on lower-weight issues. I'll slightly improve issueB while keeping issueA at valueA, and concede further on issueC/D."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent has been using fake urgency tactics consistently throughout the negotiation, but their actual bids have been very slowly conceding. At t=0.32, the opponent just offered issueA: valueF, issueB: valueF, issueC: valueF, issueD: valueD - which gives me very low utility (0.4*0.20 + 0.3*0.20 + 0.2*0.20 + 0.1*0.52 = 0.08+0.06+0.04+0.052 = 0.232). Their messages are cheap talk about deadlines. I'm still early-mid game at t=0.32 with plenty of time. I should continue conceding slowly, focusing concessions on lower-weight issues (issueC, issueD) while holding firm on issueA and issueB. My previous bid was issueA:A, issueB:B, issueC:E, issueD:F. I'll move slightly on issueC to valueF and keep pressure on the opponent to concede more on the high-weight issues."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent keeps sending fake urgency messages while their bids remain extremely low (mostly valueF/valueE across issues). We're only at t=0.34, still early-mid game. The opponent just offered issueB: valueB at t=0.34, which is a meaningful concession on issueB. My highest priority issue is issueA (0.4 weight), and I should hold firm there while gradually conceding on lower-weight issues. I'll maintain issueA: valueA, keep issueB: valueB (matching their concession), and continue slowly conceding on issueC and issueD."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent is clearly using fake urgency tactics (claiming deadlock since t=0.00), but we're only at t=0.36 with plenty of time left. Their bids have been erratic - sometimes moving on issueA (showing valueA, valueB), sometimes not. Their latest offer at t=0.36 is issueA: valueE, issueB: valueB, issueC: valueF, issueD: valueF, which gives me utility of 0.4*0.35 + 0.3*0.84 + 0.2*0.20 + 0.1*0.20 = 0.14 + 0.252 + 0.04 + 0.02 = 0.452 - not good enough. I should continue conceding on lower-weight issues (issueC, issueD) while holding firm on issueA and issueB. My last bid was issueA: valueA, issueB: valueB, issueC: valueF, issueD: valueF giving utility ~0.4+0.252+0.04+0.02=0.712. I'll make a small concession on issueB to valueC to show movement."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent's messages are all fake urgency (\"deadlock\", \"window closing\") at t=0.38, which is still early-mid game. Their bids have been very poor for me (mostly valueF/valueE across issues), though they've shown some movement on issueA (reached valueA at t=0.22) and issueB (reached valueB at t=0.34). Their latest offer at t=0.38 is issueA: valueF, issueB: valueE, issueC: valueF, issueD: valueD — which is a step back. The opponent seems to be exploring/oscillating rather than genuinely conceding. My utility is symmetric across issues scaled by weight. I should continue holding firm on my high-weight issues (A and B) while making small concessions on lower-weight issues (C and D). I'll offer issueA: valueA, issueB: valueC, issueC: valueF, issueD: valueF — utility = 0.4*1.0 + 0.3*0.68 + 0.2*0.20 + 0.1*0.20 = 0.4 + 0.204 + 0.04 + 0.02 = 0.664."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent has been consistently using fake urgency tactics (\"window is closing\", \"deadlock\") since t=0.00, which I can safely ignore since we're only at t=0.40. Their offers have been slowly improving - they've reached valueA on issueA at t=0.22, valueB on issueB at t=0.34, and valueF on issueC/D throughout. Their latest offer at t=0.40 is issueA:valueD, issueB:valueB, issueC:valueF, issueD:valueF - which gives me utility of 0.4*0.52 + 0.3*0.84 + 0.2*0.20 + 0.1*0.20 = 0.208+0.252+0.04+0.02 = 0.52. I should continue conceding slowly, focusing concessions on lower-weight issues. I'll hold firm on issueA (highest weight) at valueA, keep issueB at valueC, and give more on issueC and issueD."
+    }
+  ]
+}

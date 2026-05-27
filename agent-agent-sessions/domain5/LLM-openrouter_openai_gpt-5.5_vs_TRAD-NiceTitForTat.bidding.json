@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At the start of the negotiation, I am targeting maximum utility because there is no time pressure to concede yet. With no opponent offers or messages, I have no evidence about their priorities, so I will open with my highest-value bid across all issues."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "I am targeting a very high utility bid (about 0.973) because it is still the very start of the negotiation and there is no need to make large concessions yet. The opponent’s only offer was all valueA, which is the worst possible bid for my preferences and shows no real concession pattern yet. I will make a small concession on my lowest-weight issueA while holding firm on the more important issues."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting a high utility bid around 0.95 because it is still very early at t=0.04 and there is no need to make large concessions yet. The opponent has only slightly improved their offer for me by moving issueC from valueA to valueB, so I will concede further only on my lowest-weight issue while holding firm on issueC and issueD."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a high utility around 0.92 because it is still very early at t=0.06, so there is no need to concede heavily yet. The opponent has moved from all valueA toward giving me strong values on issueC and issueD, so I will hold firm on my most important issues while conceding the low-weight issueA fully to encourage movement."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "At t=0.08 it is still very early, so I am targeting a high-utility bid while avoiding simply repeating my last offer. The opponent’s offers have improved substantially for me, especially on the high-weight issues C and D, so I will hold firm there and make concessions mainly on lower-weight issues A and B."
+    }
+  ]
+}

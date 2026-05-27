@@ -1,0 +1,118 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent's initial offer provides very low utility for me and is accompanied by an aggressive deadline-style threat, which I will treat as cheap talk since we are only at t=0.0. I will anchor the negotiation by offering a bid that maximizes my utility (1.0), but I will accept their proposed values for issueD (valueB) and issueE (valueA) because they happen to also give me maximum utility."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent is aggressively demanding I accept their low-utility offer (0.44) and using threats of walking away at t=0.02. I treat these threats as cheap talk and manipulative tactics, especially given how early it is in the negotiation. I will maintain a firm position on my most critical issues (A, B, C, D) but will signal a slight willingness to negotiate by making a small concession on one of my lower-priority issues (F), while preserving agreement on the issues where we naturally align (D and E)."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent's messages rely heavily on aggressive cheap talk and empty threats to walk away, while their offers simultaneously worsen in utility for me. Given that it is extremely early in the negotiation (t=0.04), there is absolutely no need to panic or concede significantly. I will ignore the threats and propose a high-utility bid (around 0.97), partially moving on issueB to 'valueA' to test their flexibility while still holding firm on what matters most."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The current time is very early in the negotiation (t=0.06), so I can afford to comfortably ignore the opponent's aggressive tone and fabricated urgency. Their offers have actually decreased in utility to me over time, which signals they are trying to anchor me low. I will respond with a high-utility offer for myself, making minor adjustments to avoid repeating the exact same bid, while maintaining firm boundaries on my heavily weighted issues."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The current time is very early in the negotiation (t=0.08), allowing me to hold firm on my most important preferences and not rush to make large concessions despite the opponent's aggressive rhetoric, which I recognize as cheap talk. I am incorporating the opponent's offers of `issueD: valueA` and `issueE: valueA` which also happen to be my top preferences, and I will test combinations of my top-high utility values on the remaining issues. This offer maintains an extremely high total utility for me while marginally exploring value substitutions on issueA and issueF."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent's messages are aggressive and attempt to impose artificial urgency and threats, which I can safely disregard as cheap-talk since the time fraction is only 0.1. However, I can learn from their actual offers: they heavily favor `valueA` for `issueD` and `issueE`, which conveniently overlap with my own maximized preferences. I will offer a newly combined high-utility bid that concedes exactly to their preferred value on `issueF` (`valueC`) to see if this partial concession invites cooperation on the heavily weighted issues A, B, and C."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent's emotional and intimidating messages are purely cheap talk and will be ignored in favor of their actual offer data. Notably, their last offer conceded entirely on issueA (valueA), which gives us an excellent mutual match alongside our prior matches on issueD and issueE. I will secure issueA, issueD (valueB), and issueE (valueA), maintain my concession on issueF (valueC), and hold firm on my top choices for issueB and issueC to see if they will match to my highest utility given it's still early in the negotiation."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent continues to rely on cheap talk threats but their actual offers show concessions, notably conceding on issueA by offering 'valueA' to align with my preferences. Since agreement has been reached on issues A, D, and E (and I have conceded closely on F), I will match their accepted values for those issues. To make a slight concession while remaining in a high-utility bracket early in the negotiation (t=0.14), I will shift issueB to 'valueA' exploring if this is more acceptable to the opponent without decreasing my utility drastically."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The time fraction is still very early (t=0.16). The opponent is continuously issuing threats and demanding compliance, which I am treating as cheap talk, while their actual bids show they are slowly conceding on issues like issueA and issueE. Given the time pressure is low, I will maintain a high-utility counteroffer targeting above 0.95 by keeping my highest favorable values on my most important issues, while partially compromising on the lowest-weight issueF, and selecting valueA for issueD since the opponent previously signaled temporary acceptance for it."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent's messages consist of fabricated urgency and threats, which I can safely disregard as cheap talk since the current time fraction is only 0.18. Structurally, their offers have shown some flexibility on `issueA` and `issueD`, occasionally proposing `valueA` and `valueB`, respectively, which are very beneficial to me. I will maintain a high-utility target (~0.94) by matching their acceptable values on `issueD` and `issueE`, while shifting slightly on `issueB` and `issueF` to explore compromises without making major concessions early in the negotiation."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent is aggressively using \"take it or leave it\" framing combined with threats as a negotiation tactic, but their actual bidding behavior shows they are consistently conceding on issueA and issueD. I will ignore the cheap talk threats and accept the mutual ground we've established on A, D, and E (where we both get high utility). Since we are still early at t=0.20, I will maintain high utility by holding firm on issueB while making a slight concession on issueC and issueF to move us towards an equitable agreement."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The current time is early in the negotiation (t=0.22), so I will maintain a relatively high utility target while making small concessions. The opponent uses repeated empty threats and fake urgency in their messages, which I will ignore as cheap talk, but I note from their bidding history that they frequently request `issueA: valueA`, `issueD: valueA/B`, `issueE: valueA`, and `issueF: valueC`. I will match them on issues A, D, E, and F to show cooperativeness, while holding firm on my preferred values for issues B and C where my utility is high."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent's strategy involves heavy use of cheap talk, relying on empty threats and fake urgency to force concessions. However, analyzing their true behavior through their offer history reveals that they are actively experimenting with compromises, such as proposing `valueA` for `issueA` and `valueB` for `issueC`. Since we are still early in the negotiation (t=0.24), there is no need to yield to their verbal pressure. Instead, I will propose a mutually beneficial offer that matches their known preferences on `issueE`, `issueF`, `issueD`, and their recent concession on `issueC`, while remaining firm on the issues that maximize my utility."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent is consistently using aggressive, threatening messages (\"I walk away\", \"blacklisted\"), which I acknowledge as cheap talk and negotiation tactics, especially since the time fraction is only 0.26. Therefore, I will ignore their demands to fold immediately and focus on their bidding behavior. They have just offered `valueA` on `issueC` and `valueB` on `issueD`, both of which provide me with maximum utility. I will accept those values but hold firm on `issueA` and `issueB` (where my weight is high) to maintain my overall utility above 0.95."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's aggressive messages threatening blacklist and walkaways are cheap talk that contradicts their actual bidding behavior, which displays meaningful concessions (e.g., offering `valueA` on `issueA` and `valueB` on `issueC`). Given we are still early in the negotiation at t=0.28, I will maintain a high target utility of ~0.88. I am incorporating their preferred values for `issueC` and `issueD` into this bid to signal cooperation, while holding firm on `issueB` where my utility is highest."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "I am targeting a utility of 0.92. Given the early stage (t=0.30), I have no reason to rush, but I want to leverage the concessions the opponent has scattered across their last few offers. Although their messages consist of repetitive, aggressive threats to walk away, I am ignoring this cheap talk and focusing on the fact that they have recently offered my highest-value options individually (issueB: valueB this turn, issueC: valueA at t=0.26). I am assembling these into a single package and conceding on issueF to their persistently requested valueC."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent's aggressive messages are pure cheap talk, with constant and identical \"last warning\" threats. I am ignoring these words and looking strictly at their bid patterns. Since they have now offered `valueB` for `issueB` (my highest utility) while previously offering `valueA` for `issueA`, `issueC`, and `issueD`, I am assembling a combination of these favorable values they have already signaled they can accept. To present a fresh offer without making major unreciprocated concessions, I am slightly dropping my request on `issueA` to `valueB` while firmly conceding on `issueF` to their preferred `valueC`."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent's messages consist entirely of aggressive threats and fake urgency, which I will ignore as cheap talk. Their latest offer (t=0.34) aligns perfectly with my top choices on issues A, C, D, and E (yielding 0.76 utility), suggesting they have flexibility on these issues. Since they previously proposed issueB as valueB (t=0.30, 0.32), I will counter by accepting their favorable terms on A, C, D, and E, maintaining issueB: valueB, and conceding on issueF to valueC to build toward a mutually beneficial agreement while securing high utility (0.92) for myself."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent has shown a willingness to concede on issue A, D, and E (offering valueA for E, valueB for D, and valueA for A). In their last offer, they also accommodated issue B by offering valueB, but pushed issue C back to valueC. Since it is still relatively early (t=0.36), I will hold firm on issues A, B, D, and E while suggesting a compromise on issue C (valueB) to search for an acceptable middle ground, keeping F at their preferred valueC. Their aggressive messages are consistent with cheap talk and fake urgency."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent has attached aggressive and strictly formatted ultimatums to every single offer, which are evidently automatic cheap-talk tactics intended to force quick concessions. Despite their claims of \"walking away\", they continue to negotiate and have recently alternated between conceding issueB (to valueB) and issueC (to valueA). Because the time is still early (t=0.38), I will offer a combination that secures my highest-utility values on most issues while accommodating their clear priorities on issueE (valueA) and issueF (valueC). I will propose a slight variation on issueB to test whether they'll accept my second-best value for it while returning to valueA for issueC."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent's threatening messages are clearly a hardline tactic, so I am ignoring the cheap talk and focusing entirely on their actual bids. In their last offer, they introduced `issueA: valueB` and maintained `issueD: valueB`, `issueE: valueA`, and `issueF: valueC`. I will match these exact values since they still provide me with very high utility (overall 0.90), while holding firm on `issueB: valueB` and `issueC: valueA` to protect my core interests."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "The opponent's repetitive messages claiming they will walk away or blacklist me are consistent cheap talk and do not correspond to the reality of their ongoing concessions, so I will ignore them. I notice the opponent consistently offers `issueE: valueA` and `issueF: valueC`, which I am willing to accept, along with variations of `valueA` and `valueB` on the more heavily weighted issues. Remaining in the mid-game, I will propose a tradeoff that secures my top preferences on issueA, issueB, issueD, and issueE, while offering a slight concession on issueC to test their flexibility."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "The opponent's threatening behavior appears to be standard posturing, as their recent history shows a clear willingness to continue negotiating and make meaningful concessions. Specifically, their latest offer matches my top values for `issueB`, `issueD`, and `issueE`. I will reciprocate this cooperativeness by maintaining their preferred values for these issues as well as conceding `issueF` and `issueC` to their recent choices. I will hold `issueA` at `valueB` to keep my utility above 0.82, presenting a fair middle-ground proposal."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent's aggressive messages threatening to walk away are purely tactical cheap talk; there is still ample time before the deadline (t=0.46) to reach a mutually beneficial agreement. Their recent offers show a willingness to compromise on issues like B and D, so I will propose a combination that captures high utility for my key issues (A, B, C, D) while heavily conceding on their apparent focuses, namely E and F (giving E=valueB and F=valueC as requested in their last bid). This balanced approach targets a utility of ~0.87 for myself while moving closer to the opponent's demonstrated preferences."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "Approaching the halfway mark, I am ignoring the opponent's repeated, identical threats and focusing on their actual bidding behavior. In their last offer, they conceded to issueB: valueA, issueD: valueA, and issueE: valueA, alongside their consistent request for issueF: valueC. I will match these exactly to build alignment and show cooperation, while holding firm on issueA: valueA and issueC: valueA to maintain my utility near 0.89."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "The opponent's messages consist entirely of aggressive cheap talk and fake urgency (\"Take this deal right now, or I'm pulling the plug\"), which I will ignore since we are only at the halfway mark (t=0.5). Their latest offer proposed values that are highly beneficial to me on issueA and issueB, and they have previously shown willingness to accept issueD=valueA. I will maintain my high-utility values on issues A, B, C, D, and E, while keeping my concession on issueF=valueC to show cooperation without sacrificing too much utility. This configuration yields a utility of 0.92."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent's repetitive aggressive messages threaten to walk away but their continued bids show these are mere cheap-talk tactics. I am proposing a strong counteroffer containing permutations of values the opponent has recently proposed, like issueB: valueA and issueC: valueB (as seen in t=0.48), while I secure my highest utilities for issueA and issueD. This secures over 0.8 expected utility while finding possible middle ground."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "The opponent is using threatening, deadline-focused language, but at t=0.54 we are only halfway through, so their threats are standard cheap talk. Their latest offer (A=A, B=A, C=B, D=C, E=A, F=C) yields a utility of ~0.66 for me, primarily dragged down by D=valueC. I will accept their proposed values for A, B, C, E, and F, but change issueD to valueB (my top value). They have previously offered D=valueB, so this tradeoff should be highly agreeable to them while keeping my utility solid at ~0.82."
+    }
+  ]
+}

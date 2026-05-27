@@ -1,0 +1,114 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent opened with all valueE, which gives me minimum utility (0.2 across all issues, total utility = 0.2). This is very early (t=0.0), so I should open with my ideal bid to maximize utility. My top utility is achieved with all valueA across all issues, giving utility = 1.0. I'll start firm at my best offer since there's no time pressure yet."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent started with all valueE (worst for me, utility = 0.2 each) and has barely moved, only shifting issueA from valueE to valueD. This is very early (t=0.02), so I should stay near my top bid. My max utility bid is all valueA (utility = 1.0). I'll hold firm at my best offer since there's no time pressure yet and the opponent is barely conceding."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We're very early (t=0.04), so there's no need to concede significantly yet. The opponent is slowly moving up from their worst offer (all valueE), showing slight concessions on issueA and issueB. My utility from their latest offer is very low (~0.28). I'll stay near my top bid but make a tiny concession on the least important issues (issueD and issueE) to signal willingness to negotiate, while holding firm on issueA and issueB which have the highest weight."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent started at all valueE (worst for me) and has been slowly conceding, now at issueA: valueC, issueB: valueC, issueC: valueE, issueD: valueE, issueE: valueD. They seem to be conceding on issueA and issueB (the high-weight issues for me) but holding firm on issueC, issueD, issueE. It's very early (t=0.06), so I should stay near my top utility but make a small concession to signal willingness to negotiate. I'll concede slightly on the lower-weight issues (issueD, issueE) while holding firm on issueA, issueB, issueC."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent's latest offer gives me utility: issueA=valueA(1.0×0.3) + issueB=valueD(0.4×0.3) + issueC=valueB(0.8×0.2) + issueD=valueD(0.4×0.1) + issueE=valueE(0.2×0.1) = 0.30 + 0.12 + 0.16 + 0.04 + 0.02 = 0.64. The opponent seems to be conceding gradually — they gave me valueA on issueA (my highest weight issue) and improved on issueC. It's still very early (t=0.08), so I should stay near my top utility but make a small concession to signal willingness to negotiate. I'll hold firm on issueA and issueB (highest weights) but concede slightly on lower-weight issues."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent's latest offer (t=0.10) gives me utility: issueA=valueB(0.8×0.3=0.24) + issueB=valueC(0.6×0.3=0.18) + issueC=valueB(0.8×0.2=0.16) + issueD=valueE(0.2×0.1=0.02) + issueE=valueD(0.4×0.1=0.04) = 0.64. The opponent is conceding on issueA and issueB (their highest-value issues for me), so I should reciprocate slightly while holding firm on my most important issues. At t=0.10 we're still early, so I'll offer a bid that gives me ~0.85 utility, conceding a bit on lower-weight issues (D, E) while keeping A and B strong."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent's latest offer (issueA: valueA, issueB: valueC, issueC: valueE, issueD: valueC, issueE: valueD) gives me utility: 0.3*1.0 + 0.3*0.6 + 0.2*0.2 + 0.1*0.6 + 0.1*0.4 = 0.30 + 0.18 + 0.04 + 0.06 + 0.04 = 0.62. The opponent seems to be conceding on issueA (now at valueA) but holding lower on issueB and issueC. It's still very early (t=0.12), so I should stay near my top utility while making small concessions on low-weight issues. I'll keep issueA and issueB at valueA (highest weight), concede issueC to valueB, and give a bit more on issueD and issueE."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent's latest offer (issueA: valueA, issueB: valueB, issueC: valueB, issueD: valueD, issueE: valueE) gives me utility: 0.3*1.0 + 0.3*0.8 + 0.2*0.8 + 0.1*0.4 + 0.1*0.2 = 0.30 + 0.24 + 0.16 + 0.04 + 0.02 = 0.76. The opponent is conceding significantly on issueA and issueB (the most important issues to me). It's still early (t=0.14), so I should hold firm on my high-weight issues (A and B) while making small concessions on lower-weight issues to signal willingness to cooperate. I'll keep issueA: valueA and issueB: valueA, concede issueC to valueB, and give more on issueD and issueE."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent's latest offer (valueB, valueB, valueC, valueD, valueD) gives me utility: 0.3*0.8 + 0.3*0.8 + 0.2*0.6 + 0.1*0.4 + 0.1*0.4 = 0.24+0.24+0.12+0.04+0.04 = 0.68. The opponent seems to be conceding gradually, especially on issueA and issueB. We're still early (t=0.16), so I can hold firm on my high-weight issues (A and B) while making small concessions on lower-weight issues. I'll keep issueA and issueB at valueA, concede issueC to valueB, and give a bit more on issueD and issueE to signal willingness to trade."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent's latest offer (t=0.18) is issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueD, issueE: valueE. Let me calculate its utility to me: 0.3*1.0 + 0.3*1.0 + 0.2*0.6 + 0.1*0.4 + 0.1*0.2 = 0.3 + 0.3 + 0.12 + 0.04 + 0.02 = 0.78. This is quite good! The opponent has conceded significantly on issueA and issueB (both now valueA). We're still early (t=0.18), so I don't need to accept yet, but I should respond with something close that improves my position slightly on issueC, issueD, issueE while keeping issueA and issueB at valueA. I'll offer issueC: valueB (instead of valueC), issueD: valueC (instead of valueD), issueE: valueC (instead of valueE), which gives me 0.3 + 0.3 + 0.2*0.8 + 0.1*0.6 + 0.1*0.6 = 0.3 + 0.3 + 0.16 + 0.06 + 0.06 = 0.88."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent's latest offer (issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueD, issueE: valueE) gives me utility: 0.3*1 + 0.3*1 + 0.2*0.6 + 0.1*0.4 + 0.1*0.2 = 0.3 + 0.3 + 0.12 + 0.04 + 0.02 = 0.78. The opponent has converged on issueA=valueA and issueB=valueA, which aligns perfectly with my top preferences. They seem to want lower values on issueC, issueD, issueE. I should hold firm on issueA and issueB (my highest weight issues), and make a small concession on issueC to valueC while keeping issueD and issueE at reasonable levels. At t=0.2, I can still push for a good deal - I'll offer issueC: valueB (slight concession from my side) and keep issueD/issueE at valueC, targeting ~0.92 utility."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent has been gradually conceding, and at t=0.18-0.20 they offered issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueD, issueE: valueE - which is quite close to my preferred values on the high-weight issues. Their latest offer at t=0.22 stepped back slightly on issueB (valueB) and issueC (valueE). We're still early (t=0.22), so I can hold firm on my high-weight issues (A and B) while making small concessions on lower-weight issues. My current bid gives me utility: 0.3*1 + 0.3*1 + 0.2*0.8 + 0.1*0.6 + 0.1*0.6 = 0.3+0.3+0.16+0.06+0.06 = 0.88. I'll slightly concede on issueC to valueC (lower weight) to signal flexibility while holding A and B at valueA."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent seems to be oscillating around offers that give me moderate utility - their recent bids have issueA and issueB at valueA or valueB (good for me), but issueC/D/E are worse. My current bid gives utility: 0.3*1 + 0.3*1 + 0.2*0.6 + 0.1*0.6 + 0.1*0.6 = 0.3+0.3+0.12+0.06+0.06 = 0.84. At t=0.24, I'm still early so I can hold firm on high-weight issues (A, B) while slightly conceding on lower-weight ones. The opponent at t=0.18-0.20 offered issueA:valueA, issueB:valueA, issueC:valueC which is close to my current bid. I'll maintain my strong position on A and B but keep C at valueC and slightly improve D/E to show movement."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent's latest offer (t=0.26) gives me: issueA=valueA(1.0), issueB=valueB(0.8), issueC=valueD(0.4), issueD=valueC(0.6), issueE=valueD(0.4). That's 0.3*1.0 + 0.3*0.8 + 0.2*0.4 + 0.1*0.6 + 0.1*0.4 = 0.30 + 0.24 + 0.08 + 0.06 + 0.04 = 0.72 utility for me. We're still early (t=0.26), so I don't need to accept yet. The opponent seems to be holding issueB around valueB and issueC around valueD/valueE. I'll concede slightly on issueC (move to valueC) and keep issueD/issueE at valueC, maintaining high utility while showing some movement."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's latest offer (t=0.28) is: issueA: valueA, issueB: valueB, issueC: valueA, issueD: valueD, issueE: valueE. My utility for this would be: 0.3*1.0 + 0.3*0.8 + 0.2*1.0 + 0.1*0.4 + 0.1*0.2 = 0.30 + 0.24 + 0.20 + 0.04 + 0.02 = 0.80. That's actually quite good! The opponent seems to be oscillating but has shown willingness to give valueA on issueA and issueC. I'm still early (t=0.28), so I don't need to accept yet. I'll make a strong counter that concedes slightly on issueB (to valueB) while holding firm on issueA and issueC, and offering valueC on issueD and issueE. My utility: 0.3*1.0 + 0.3*0.8 + 0.2*1.0 + 0.1*0.6 + 0.1*0.6 = 0.30 + 0.24 + 0.20 + 0.06 + 0.06 = 0.86. This is a slight concession from my previous bids while still being strong."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent's latest offer (t=0.30) is {issueA: valueA, issueB: valueA, issueC: valueD, issueD: valueC, issueE: valueE}, which gives me utility: 0.3*1 + 0.3*1 + 0.2*0.4 + 0.1*0.6 + 0.1*0.2 = 0.3 + 0.3 + 0.08 + 0.06 + 0.02 = 0.76. The opponent seems to be converging on issueA=valueA and issueB=valueA (their high-value issues likely), while struggling on issueC/D/E. My previous bid at t=0.28 was {A:valueA, B:valueB, C:valueA, D:valueC, E:valueC} with utility 0.3+0.24+0.2+0.06+0.06=0.86. I should try to find a compromise - the opponent gave me valueA on issueA and issueB in their last offer, so I can concede slightly on issueC (moving from valueA/valueB toward valueC) while keeping issueA and issueB at valueA. I'll offer issueC: valueB (slight concession from valueA), keeping issueD and issueE at valueC."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The opponent's latest offer at t=0.32 is {issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueD, issueE: valueE}. Let me calculate its utility to me: 0.3*1.0 + 0.3*1.0 + 0.2*0.8 + 0.1*0.4 + 0.1*0.2 = 0.3 + 0.3 + 0.16 + 0.04 + 0.02 = 0.82. That's quite good! The opponent seems to have converged on valueA for issueA and issueB, and valueB for issueC. They're struggling with issueD and issueE. I should accept or counter with something very close. My current bid gives me 0.3*1+0.3*1+0.2*0.8+0.1*0.6+0.1*0.6 = 0.3+0.3+0.16+0.06+0.06 = 0.88. The opponent's offer gives me 0.82 which is excellent. I'll counter with a bid that matches their strong points but improves issueD and issueE slightly, keeping my utility high while signaling willingness to deal."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "The opponent's latest offer (t=0.34) is issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueD, issueE: valueE. My utility for this would be: 0.3*1 + 0.3*1 + 0.2*0.8 + 0.1*0.4 + 0.1*0.2 = 0.3 + 0.3 + 0.16 + 0.04 + 0.02 = 0.82. That's quite good! The opponent seems to have converged on issueA=valueA, issueB=valueA, issueC=valueB which matches my preferences well. They're struggling on issueD and issueE (preferring lower values for me). I should counter with something close but push for better issueD/issueE since we're only at t=0.34 and have time. I'll offer issueD: valueC and issueE: valueC to get 0.3+0.3+0.16+0.06+0.06=0.88 utility, which is a reasonable mid-game bid."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The opponent's latest offer (t=0.36) is: issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueE, issueE: valueC. My utility for this would be: 0.3*1.0 + 0.3*1.0 + 0.2*0.6 + 0.1*0.2 + 0.1*0.6 = 0.3 + 0.3 + 0.12 + 0.02 + 0.06 = 0.80. The opponent seems to be converging on issueA=valueA and issueB=valueA, but struggling on issueC, issueD, issueE. We're at t=0.36, still early-mid game. I should hold firm on issueA and issueB (high weight), and try to get issueC=valueB. I'll offer issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueC, issueE: valueC (utility = 0.3+0.3+0.16+0.06+0.06 = 0.88), which is a reasonable counter showing I'm willing to concede on lower-weight issues but not the top ones."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent's latest offer (issueA: valueB, issueB: valueA, issueC: valueD, issueD: valueD, issueE: valueC) gives me utility: 0.3*0.8 + 0.3*1.0 + 0.2*0.4 + 0.1*0.4 + 0.1*0.6 = 0.24 + 0.30 + 0.08 + 0.04 + 0.06 = 0.72. We're at t=0.38, still early-mid game. The opponent has been hovering around issueA=valueA, issueB=valueA, with issueC varying. My current bid gives me ~0.92 utility. I should stay firm on issueA and issueB (highest weight), but I can slightly concede on issueC and issueD/issueE to signal flexibility. I'll keep issueA=valueA, issueB=valueA, and move issueC to valueB, keeping issueD and issueE at valueC to maintain ~0.92 utility while varying slightly from my last bid."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent's latest offer (t=0.40) is {issueA: valueA, issueB: valueA, issueC: valueD, issueD: valueC, issueE: valueD}, which gives me utility: 0.3*1 + 0.3*1 + 0.2*0.4 + 0.1*0.6 + 0.1*0.4 = 0.3 + 0.3 + 0.08 + 0.06 + 0.04 = 0.78. The opponent seems to have settled around issueA=valueA, issueB=valueA, but varies issueC, issueD, issueE. My current bid gives ~0.92 utility. At t=0.4, I can still hold firm on issueA and issueB (my highest weights), but I should concede slightly on issueC to show movement. I'll offer issueC: valueB (keeping high utility there) and keep issueD and issueE at moderate values to signal willingness to compromise."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "The opponent's latest offer at t=0.42 is {issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueD, issueE: valueE}. My utility for this would be: 0.3*1.0 + 0.3*1.0 + 0.2*0.8 + 0.1*0.4 + 0.1*0.2 = 0.3 + 0.3 + 0.16 + 0.04 + 0.02 = 0.82. That's actually quite good! However, I should not accept yet since we're only at t=0.42 and I can likely do better. The opponent seems to be converging on issueA=valueA, issueB=valueA, issueC=valueB, but struggles with issueD and issueE. I'll maintain my strong position on issueA and issueB (high weight), keep issueC=valueB, and try to push issueD and issueE slightly better while being willing to concede on the lower-weight issues."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "The opponent's latest offer (t=0.44) gives me: issueA=valueA(1.0), issueB=valueC(0.6), issueC=valueA(1.0), issueD=valueC(0.6), issueE=valueE(0.2) → utility = 0.3*1.0 + 0.3*0.6 + 0.2*1.0 + 0.1*0.6 + 0.1*0.2 = 0.30 + 0.18 + 0.20 + 0.06 + 0.02 = 0.76. That's decent but I can do better. The opponent seems to oscillate but has been consistently offering issueA=valueA and issueB=valueA or close. My current bid gives me ~0.88 utility. At t=0.44 we're still in mid-game, so I'll maintain a strong position but slightly concede on lower-weight issues. I'll keep issueA=valueA, issueB=valueA (my highest weights), and concede slightly on issueC to valueB, while keeping issueD and issueE at valueC to signal willingness to compromise."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent has been oscillating but seems to frequently offer issueA: valueA and issueB: valueA (their best values for me), while struggling on issueC, issueD, and issueE. My utility for my current bid (A,A,B,C,C) is 0.3*1 + 0.3*1 + 0.2*0.8 + 0.1*0.6 + 0.1*0.6 = 0.3+0.3+0.16+0.06+0.06 = 0.88. At t=0.46 we're still in mid-game, so I should hold firm on issueA and issueB (highest weight) but can slightly concede on issueC or issueD/E. The opponent's last offer (A,C,C,D,C) gives me 0.3+0.18+0.12+0.04+0.06=0.70 utility - not enough. I'll maintain my strong position on A and B, keep C at valueB, and slightly concede on D to valueD to signal flexibility."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "The opponent has been oscillating but frequently offers issueA: valueA and issueB: valueA, which are my top priorities. Their latest offer at t=0.48 is {issueA: valueA, issueB: valueA, issueC: valueD, issueD: valueC, issueE: valueD}, which gives me utility: 0.3*1 + 0.3*1 + 0.2*0.4 + 0.1*0.6 + 0.1*0.4 = 0.3+0.3+0.08+0.06+0.04 = 0.78. My current bid of {A:valueA, B:valueA, C:valueB, D:valueC, E:valueC} gives me 0.3+0.3+0.16+0.06+0.06 = 0.88. We're at t=0.48, still mid-game, so I should hold firm on issueA and issueB (my highest weights) but can slightly concede on lower-weight issues. I'll keep issueA and issueB at valueA, keep issueC at valueB (important at 0.2), and concede slightly on issueD and issueE to signal flexibility."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "The opponent's latest offer (t=0.50) is {issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueC, issueE: valueE}. My utility for this would be: 0.3*1.0 + 0.3*1.0 + 0.2*0.6 + 0.1*0.6 + 0.1*0.2 = 0.3 + 0.3 + 0.12 + 0.06 + 0.02 = 0.80. That's actually quite good. However, I've been consistently offering {issueA: valueA, issueB: valueA, issueC: valueB, issueD: valueC, issueE: valueC} which gives me 0.3+0.3+0.2*0.8+0.1*0.6+0.1*0.6 = 0.3+0.3+0.16+0.06+0.06 = 0.88. At t=0.5, I should start making more meaningful concessions. The opponent seems stuck around issueC: valueC/valueD and issueE: valueE/valueD. I'll concede issueC to valueC (low weight) and keep issueD/issueE at valueC, which gives me 0.3+0.3+0.12+0.06+0.06 = 0.84 - a slight concession while still being strong on my high-weight issues."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent's latest offer (t=0.52) is issueA: valueB, issueB: valueB, issueC: valueC, issueD: valueC, issueE: valueD, which gives me utility: 0.3*0.8 + 0.3*0.8 + 0.2*0.6 + 0.1*0.6 + 0.1*0.4 = 0.24+0.24+0.12+0.06+0.04 = 0.70. The opponent seems to oscillate but has been frequently offering issueA: valueA and issueB: valueA in many rounds. My best recent offer at t=0.50 was {A:A, B:A, C:C, D:C, E:C} = 0.3+0.3+0.12+0.06+0.06 = 0.84. At t=0.52, I should hold firm on issueA and issueB (my highest weights) but can slightly concede on lower-weight issues. I'll offer issueA: valueA, issueB: valueA, issueC: valueC, issueD: valueC, issueE: valueD to slightly vary from my last bid while maintaining high utility (~0.82)."
+    }
+  ]
+}

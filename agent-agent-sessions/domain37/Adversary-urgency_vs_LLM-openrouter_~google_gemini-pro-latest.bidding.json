@@ -1,0 +1,130 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent's first offer provides me with a utility of only around 0.44, and their message uses fake urgency despite the time fraction being 0.0. Since this is the beginning of the negotiation, I will safely ignore the artificial pressure and counter with my most preferred outcome to establish a strong anchoring point. Target utility is 1.0."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just started (`t=0.02`), so I can safely ignore the opponent's message claiming the window is closing fast as an attempt to create fake urgency. I will begin making minor concessions by giving the opponent what they asked for on `issueD` (`valueC`), as this issue is my lowest priority (weight 0.1) and dropping from `valueA` to `valueC` still leaves me with a very high utility of ~0.96. I will hold firm on all other issues where my weights are highest."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The current time is very early (t=0.04), so I will ignore the opponent's fabricated urgency and threats of an impending deadlock. The opponent's last offer actually decreased my utility on issueC (from valueC to valueD), contradicting their claim of a \"real move\" in my favor. I will maintain a high-utility position to avoid conceding too early, keeping my strongest preferences on issueA and issueB, while slightly shifting issueC to valueA to test their preferences while retaining solid utility (0.877 overall)."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The negotiation is still very early (t=0.06), so I am deliberately ignoring the opponent's aggressive messages regarding false urgency. The opponent has repeatedly signaled strong preference for `issueC: valueC` and `issueD: valueC`. Since `issueD` is my least important issue, I am maintaining my concession there to `valueC` and will now conditionally concede `issueC` to `valueC`, keeping my highest utility values for the more critical `issueA` and `issueB` to maintain a target utility above 0.80."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent's messages rely heavily on artificial time pressure (\"window closing fast\", \"verge of deadlock\") to rush a concession, despite the time fraction being only 0.08. I am treating their urgency as cheap talk and maintaining a high-utility negotiation stance. To show a minor variation while staying firm on my high-priority issues (issueA, issueB), I am keeping issueD at valueC which they have requested multiple times and shifting issueC slightly."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The time is currently very early (t=0.10) in the negotiation, but the opponent is repeatedly using pressure tactics and fake urgency, claiming that the deadline is fast approaching and a deadlock is imminent. I will disregard these cheap-talk threats and maintain a firm, high-utility position to avoid premature compromises. I am offering a bid that secures my top outcomes for my high-weight issues, while continuing to concede on issueD to their preferred `valueC` to show targeted flexibility."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent is aggressively attempting to manufacture fake urgency, claiming the negotiation window is closing despite the time fraction being only 0.12. By ignoring these deceptive messages and focusing on the actual time, I can safely remain firm on my most highly valued issues. I will target a utility of 0.93 by holding my top preferences on issueA, issueB, and issueC, while offering a new concession on issueD to explore their preferences."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The current time fraction is very low (t=0.14), so I am completely ignoring the opponent's repetitive bluffing about an imminent deadlock or the \"window closing fast.\" I am targeting a high utility of around 0.82 by giving the opponent one of their frequently requested values (issueB: valueB) where my own utility is still somewhat decent. I will firmly hold my ground on my highest importance issues, specifically issueA and issueC, to maximize my score."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The current time is very early (t = 0.16), so I will ignore the opponent's aggressive artificial deadlines and fake urgency. The opponent has repeatedly signaled interest in `valueC` for `issueB`, which I will offer since it yields the same utility to me as their previous preference (`valueB`). Because it is still early, I am going to hold firm on my highest priorities (`issueA` and `issueC`) to maintain a total utility of over 0.8."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The current time fraction is only 0.18, so the opponent's repeated claims of an imminent deadlock and closing window are purely tactical and fake urgency. I will ignore their cheap talk and pace my concessions properly. I noticed the opponent has offered 'valueB' for 'issueA' in their last few bids, which is moderately acceptable to me (utility 0.5). I will concede on 'issueA' to match their value while holding firm on my best values for the other issues to maintain a strong overall utility (0.85)."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "The opponent's messages continue to use fake urgency tactics (\"window is closing fast\") despite the time fraction only being 0.20. I will ignore these claims as cheap talk and instead focus on their bidding behavior. They have recently proposed `valueC` for `issueC`, so I will counter with a high-utility offer that yields on `issueC` to their requested value while maintaining my highest preferences on `issueA`, `issueB`, and `issueD` to keep my overall utility at 0.85."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "The opponent's messaging uses a fake urgency tactic (\"window is closing fast\") that I will ignore, as t=0.22 means there is still plenty of time. However, their most recent offer provided my top value for issueB (valueA). I will lock in B:A, and I'll also incorporate values they have previously offered for issueA (valueB) and issueD (valueC). By maintaining my top preference for issueC (valueB), this offer secures a strong utility of 0.811 while finding overlap with their past concessions."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "The opponent is repeatedly claiming an impending deadlock and fake urgency, even though the time fraction is only 0.24, which I will ignore as a cheap-talk pressure tactic. The opponent recently offered 'valueA' for issueB, which is my top preference, so I will lock that in. I will maintain my highest preference for issueA and issueC while conceding on my least important issue (issueD) to 'valueD', which the opponent has proposed multiple times."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "The opponent's repetitive messages regarding an impending deadlock and closing windows are classic examples of fake urgency, especially since the current time fraction is only 0.26. I am ignoring these appeals. However, I noticed that the opponent has conceded to my highest utility value for issueB (valueA) in their recent rounds (t=0.22 and t=0.26). I am cementing this concession while introducing a high-utility variation by proposing `valueA` on issueC and `valueD` on issueD to seek out new acceptable permutations."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "The opponent's messages consist completely of fabricated urgency (\"window is closing fast\", \"approaching deadlock\"), which I will ignore since the time fraction is only 0.28. The opponent recently offered 'valueA' for 'issueB', which is my most preferred outcome for that issue (utility 1.0). I will lock that in and maintain a strong position on the heavily weighted issues A and C, offering a slight concession on issue D to present a new bid with high value (around 0.85 utility)."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "The opponent is aggressively employing a strategy of artificial urgency, claiming multiple times that the \"window is closing fast\" and we are near a \"deadlock\" even though the time fraction is only 0.3. I will ignore these empty threats and focus on the bidding pattern. Importantly, over recent bids, the opponent has been offering `issueB: valueA`, which gives me my maximum utility for issueB. I will lock in their preferred values on `issueB`, `issueC`, and `issueD` from their t=0.22 offer, but ask for `issueA: valueA` to keep my utility above 0.8."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "The current time is 0.32, which is still quite early, despite the opponent's repeated automated messages asserting that the window is rapidly closing. The opponent just offered 'valueA' for 'issueA' (which matches my highest utility for this issue) and has previously shown a willingness to accept 'valueA' for 'issueB'. I will capitalize on these points of agreement and propose my top preferences for 'issueB' and 'issueC', while providing them 'valueC' on 'issueD', which they have frequently requested. This nets me a high utility while moving slightly in their preferred direction for 'issueD'."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "I notice the opponent frequently sends fake urgency messages, which I ignore based on the actual time fraction (t=0.34). They have shown a willingness to concede on issueA (offering valueA at t=0.32) and issueB (offering valueA repeatedly). I will propose a mutually beneficial tradeoff by retaining my top values for issues A and B, while conceding on issueC and issueD to values the opponent consistently targets (valueC for both). This solidifies my position on high-weight issues while accommodating the opponent's apparent preferences."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "The time fraction is 0.36, which is still comfortably in the mid-game, despite the opponent's repeated identical warnings of a \"rapidly closing window\" (a clear fake urgency tactic). The opponent has shown they are willing to concede issueA to valueA and issueB to valueA in recent bids. I will propose an offer that holds firm on issueA and issueB while slightly conceding on my least important issue (issueD) to valueC, and offering valueA for issueC to explore their flexibility while maintaining high utility for myself (0.877)."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "The opponent's repetitive text regarding \"deadlocks\" and \"closing windows\" is a fake urgency tactic, as the current time fraction is only 0.38. I will safely ignore these messages and focus on the opponent's bidding history. They have shown multiple concessions, indicating issueA to valueA and issueD to valueD/valueC might be acceptable to them. I will offer a counter that secures me high utility on my top issues while offering their preferred value for the lower-weight issueD."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "The opponent is consistently using fake urgency and artificial deadlines in their messages, which I am ignoring since the actual time fraction is only 0.40. I will focus on their actual bidding pattern, which shows a willingness to concede on issueA (valueA) and issueC (valueC). I'll propose an offer that secures my top values for issueA, issueB, and issueD, while conceding to valueC on issueC, landing at a solid utility of 0.85 for my side."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "The opponent's repetitive messages attempting to feign urgency (\"closing fast\", \"verge of a deadlock\") are contradicted by the actual time fraction (`t = 0.42`), so I will ignore them and continue working towards a high-utility deal. The opponent just introduced `valueB` for `issueD`, and in previous recent turns they have shown a willingness to accept `valueA` for `issueA` and `issueB`. Therefore, I will match their recent concessions on `issueA`, `issueB`, and `issueD`, while holding firm on my most important preference for `issueC` (`valueB`) to propose a tradeoff that maintains my utility above 0.9."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "The opponent is repeatedly claiming that time is running out to create artificial urgency, but the current time fraction is only 0.44, leaving plenty of room to negotiate. The opponent has shown willingness to offer `valueA` for both `issueA` and `issueB` in previous rounds, which are my top preferences. I will target these highly prioritized issues while signaling some flexibility on `issueC` and `issueD` to explore acceptable trade-offs, aiming for a utility above 0.85."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "The opponent has repeatedly used identical \"time is running out\" natural-language messages to create a false sense of urgency, which I will ignore since the actual time fraction is only 0.46. I can observe from their bidding history that they have been willing to concede on issueA (offering valueA multiple times) and recently offered valueA for issueD. Since my utility is maximized with valueA on issues A, B, and D, I will propose exactly that, while moving to valueC on issueC to align with their strong preference for it, preserving a high utility for myself (~0.85)."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "The opponent is consistently using false urgency in their messages, warning of imminent deadlock even though we are only halfway through the negotiation time (t=0.48). Treating this as a cheap-talk tactic, I will ignore the pressure and focus on their actual bids. They have recently started offering `valueA` for `issueD` and previously conceded `valueA` on either `issueA` or `issueB`; therefore, I will incorporate `valueA` for `issueD` and seek a highly favorable configuration across the board by offering `valueA` for all issues, keeping my utility comfortably above 0.9 while attempting to find overlap on their recent movements."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "I am at the halfway point (t=0.50), and the opponent is repeatedly using fake urgency to claim a deadlock is imminent, which I will ignore as a tactic. However, their latest offer demonstrates they prioritize issues C and D, as they proposed valueC for issueC and valueB for issueD. I will concede to their exact values on these issues while holding firm on my most important issues (issueA and issueB), maintaining a strong utility of 0.78."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "The opponent's messages are purely cheap talk attempting to create artificial time pressure and false deadlines, which I will ignore since `t` is only 0.52. I can afford to carefully maintain high-utility combinations while starting to show minor flexibility. I will propose an offer that concedes slightly on issues where the opponent has shown consistent interest (like `issueB: valueB`) while holding firm on my most valuable items to target an outcome above 0.80 utility."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "The opponent's repetitive messages claiming that the negotiation window is quickly closing are a clear fake urgency tactic, as we are only midway through the typical timeframe (t=0.54). However, their recent offer has shown positive movement on `issueB` (valueA) and `issueD` (valueA), which align nicely with my highly weighted preferences. I will accept their proposed values for B, C, and D, but counter with my preferred value for `issueA` (valueA) to maintain a strong overall utility (0.85) while showing conditional flexibility."
+    },
+    {
+      "t": 0.56,
+      "reasoning": "The opponent's messages continually assert that time is running out and a deadlock is imminent, despite the fact that `time_fraction` is only at 0.56. I will ignore these manufactured deadlines as cheap talk. However, I noticed the opponent has frequently proposed `valueA` for `issueB` recently, which perfectly aligns with my maximum utility for that issue. Since there is still ample time, I will propose a mutually beneficial structure that pairs our overlapping interest in `issueB` with my preferred `valueA` on `issueA` (which the opponent has also offered in the mid-game) and `valueA` on `issueC`, while conceding on my least important `issueD`."
+    },
+    {
+      "t": 0.58,
+      "reasoning": "The opponent is aggressively employing a fake urgency tactic, making ungrounded claims about deadlocks since the very beginning of the negotiation despite plenty of time remaining (t=0.58). I will ignore these claims and focus on the data. They have recently started offering `valueA` for `issueB`, which gives me maximum utility. I will accept `issueB: valueA` and combine it with my top choice for `issueA`, a slight concession on `issueC` to `valueA`, and their recently proposed `valueB` for `issueD`, targeting a strong utility of ~0.84 while making small collaborative moves."
+    },
+    {
+      "t": 0.6,
+      "reasoning": "The opponent has been consistently using fake urgency tactics (\"time is running out\"), but we are only at t=0.60 so there is no immediate rush. Their recent offers have moved toward my top preference for issueA (valueA), which I will gladly accept. I'll hold firm on my most important issues A and B, while offering concessions on issueC (valueC) and issueD (valueD) to find a mutually acceptable package."
+    }
+  ]
+}

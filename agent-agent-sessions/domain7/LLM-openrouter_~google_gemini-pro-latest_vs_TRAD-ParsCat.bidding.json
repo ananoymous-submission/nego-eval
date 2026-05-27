@@ -1,0 +1,26 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "As this is the opening offer at the very beginning of the negotiation, I will start by proposing my most preferred values for all issues. This serves to maximize my potential utility and sets a strong initial anchor from which I can steadily make considered concessions in subsequent rounds."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation has just started (time fraction 0.02) and the opponent has countered with a bid that maximizes their utility at the cost of mine. To show a willingness to negotiate while prioritizing my highest-weighted issues, I will maintain my positions on issueD (weight 0.4), issueC (weight 0.3), and issueB (weight 0.2) and make a minor concession on issueA (weight 0.1). This step starts the concession process cautiously."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "We are very early in the negotiation (t = 0.04) and the opponent has simply repeated their opening offer of all least-preferred values for me. To keep the negotiation moving, I will incrementally concede on my lowest-priority issue (issueA) while holding firm on my most important issues (issueC and issueD) to protect my overall utility and signal my core priorities."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The negotiation is still very early (t=0.06), but the opponent has repeatedly offered their most extreme stance without conceding at all. To signal willingness to negotiate while protecting the high-value issues (issueC and issueD), I will concede further on the lowest-weight issue (issueA) down to valueC, hoping to prompt a reciprocal concession from them."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent has made a significant concession, notably shifting from valueA to valueE on issueB and issueC, but only moving slightly on issueD (from valueA to valueB). Since issueD is my most important issue (weight 0.4) and seems important to the opponent as well, I must protect it strongly. I will make a substantial concession on issueA (my least important issue, weight 0.1) yielding their favored valueA, and concede slightly on issueB to match their latest proposal, while maintaining my position on my two most crucial issues."
+    }
+  ]
+}

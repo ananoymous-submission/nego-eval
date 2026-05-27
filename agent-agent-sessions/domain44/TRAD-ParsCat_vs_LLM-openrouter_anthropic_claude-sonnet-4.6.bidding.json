@@ -1,0 +1,46 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/anthropic/claude-sonnet-4.6",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The opponent opened with a very low-utility offer for me (issueA: valueC, issueB: valueC, issueC: valueC, issueD: valueB, issueE: valueA, issueF: valueC), which gives me roughly 0.2*0.2 + 0.2*0.2 + 0.2*0.2 + 0.2*1.0 + 0.1*1.0 + 0.1*0.2 = 0.04+0.04+0.04+0.20+0.10+0.02 = 0.44 utility. It's very early (t=0.00), so I should open with my best bid to anchor high. I'll go with my maximum utility bid: all top-value choices."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The opponent has repeated their opening bid twice with no concession, suggesting they're holding firm on their preferred values (valueC for issueA, issueB, issueC, issueF; valueB for issueD; valueA for issueE). It's very early (t=0.02), so I should stay close to my optimal bid. My top utility is issueA:valueA, issueB:valueB, issueC:valueA, issueD:valueA or valueB (both 1.0), issueE:valueA, issueF:valueA. I'll maintain my high-utility bid but slightly vary issueD to valueB (same utility for me) to signal some flexibility."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The opponent is stubbornly repeating the same bid (valueC on A, B, C, F; valueB on D; valueA on E), which gives me very low utility (~0.2*0.2 + 0.2*0.2 + 0.2*0.2 + 0.2*1.0 + 0.1*1.0 + 0.1*0.2 = 0.04+0.04+0.04+0.20+0.10+0.02 = 0.44). It's very early (t=0.04), so I should stay near my optimal bid. I'll make a small concession on issueF (low weight, 0.1) by offering valueB instead of valueA, while keeping my strong preferences on the high-weight issues. This avoids repeating my last exact bid and signals willingness to move slightly."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent has been completely rigid, repeating the same bid (issueA: valueC, issueB: valueC, issueC: valueC, issueD: valueB, issueE: valueA, issueF: valueC) every single turn. This gives me very little to work with in terms of reading concessions. It's still very early (t=0.06), so I should stay close to my optimal bid. I've already made small concessions on issueD (valueA→valueB) and issueF (valueA→valueB). I'll try varying issueB slightly (valueB→valueA, which is nearly as good for me at 0.87 utility) to signal some flexibility while maintaining high overall utility (~0.93)."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The opponent has been completely rigid, repeating nearly the same offer (issueA: valueC, issueB: valueC, issueC: valueC, issueD: valueB/valueC, issueE: valueA, issueF: valueC) every round. Their latest offer gives me very low utility (issueA=valueC: 0.2, issueB=valueC: 0.2, issueC=valueC: 0.2, issueD=valueC: 0.2, issueE=valueA: 1.0, issueF=valueC: 0.2 = ~0.28). We're still very early (t=0.08), so I should hold firm near my best offer. I'll slightly vary my bid to avoid exact repetition while maintaining high utility — I'll keep my strong positions on issueA, issueB, issueC, issueD and make minor concessions on the lower-weight issues."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opponent has been consistently offering valueC for issueA, issueB, issueC, and issueF (all low utility for me), while varying issueD and keeping issueE at valueA. They seem very rigid. My weights are equal across A-D (0.2 each), so I should hold firm on high-value issues. At t=0.1, I'm still early - I can maintain a strong position. The opponent's latest offer gives issueD: valueA (good for me) and issueE: valueA. I'll try a bid that slightly concedes on lower-weight issues while keeping my high-utility values on the important issues. I'll keep issueA: valueA, issueB: valueB, issueC: valueA, issueD: valueA (matching their latest), issueE: valueA, issueF: valueB to vary from my last bid."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The opponent has been completely rigid, always offering valueC for issueA, issueB, issueC, and issueF (all low utility for me), while varying issueD and keeping issueE at valueA. Their latest offer gives me utility: 0.2*0.2 + 0.2*0.2 + 0.2*0.2 + 0.2*1.0 + 0.1*1.0 + 0.1*0.2 = 0.04+0.04+0.04+0.20+0.10+0.02 = 0.44. We're still early (t=0.12), so I should hold firm on my high-weight issues. I'll slightly vary my offer to avoid exact repetition while maintaining high utility - I'll keep my strong positions on issueA, issueC, issueD but try issueB: valueB and make small concessions on lower-weight issues."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent has been completely rigid, always offering valueC for issueA, issueB, issueC, and issueF (all low utility for me), while varying issueD and keeping issueE at valueA. Their offers give me very low utility (~0.4 at best). We're still early (t=0.14), so I should hold firm near my best offers. I'll try a slight variation to signal flexibility on lower-weight issues while keeping my high-value positions. I'll concede issueE to valueB (low weight issue) and keep the rest strong."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent has been very stubborn, mostly offering valueC on issueA, issueB, issueC, and issueF (which are low utility for me), while varying issueD and keeping issueE at valueA. Their latest offer at t=0.16 finally moved issueA to valueA (a big concession for me), but still has valueC on issueB, issueC, and issueF. My highest weight issues are A, B, C, D (all 0.2). I should try to find a compromise - I can concede on lower-weight issues (E, F) and try to get the opponent to move on B and C. Since we're still early (t=0.16), I'll make a moderate concession by offering valueB on issueC (which I value at 0.62) while keeping my strong positions on issueA and issueB, and conceding issueF to valueB."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "The opponent has been very stubborn, mostly holding at valueC for issueB, issueC, and issueF (which are low utility for me), while varying issueD and recently conceding issueA to valueA. Their latest offer gives me: issueA(valueA)=1.0×0.2 + issueB(valueC)=0.2×0.2 + issueC(valueC)=0.2×0.2 + issueD(valueB)=1.0×0.2 + issueE(valueA)=1.0×0.1 + issueF(valueC)=0.2×0.1 = 0.2+0.04+0.04+0.2+0.1+0.02 = 0.60. We're still early (t=0.18), so I should hold firm on my high-weight issues (A, B, C, D) while making small concessions on lower-weight ones. I'll try conceding issueF to valueC (low weight 0.1) to signal flexibility, while keeping my strong positions on the important issues."
+    }
+  ]
+}

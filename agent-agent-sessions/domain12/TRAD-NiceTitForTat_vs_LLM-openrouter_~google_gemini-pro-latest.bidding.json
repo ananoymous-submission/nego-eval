@@ -1,0 +1,42 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/~google/gemini-pro-latest",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "The negotiation has just begun, and the opponent's opening offer yields the lowest possible utility for me across all issues. To anchor the negotiation in my favor, I will counter with my optimal solution, demanding my highest-utility values on all issues to set a strong baseline before any concessions are made."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "The negotiation is extremely early (t=0.02), and the opponent has repeated their initial offer, which yields my absolute lowest utility. To prompt some movement without giving up significant value, I will make a very minor concession on my least important issue (issueF) while holding firm on everything else, particularly my most critical issues (issueA, issueB, and issueC)."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "The time fraction is still very early (t=0.04), allowing me to target a high utility (around 0.90+). The opponent made a significant concession on issueB (offering `valueA`) and issueA (offering `valueB`). To reciprocate their movement while maintaining high utility, I will accept their offer of `valueA` on issueB, hold firm on my most important issues, and make a small concession on one of my lower-priority issues (issueE) to `valueB`."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "The opponent is making significant concessions on my most important issues (issueA and issueB), indicating they prioritize other issues. Because it's still very early (t=0.06), I want to secure the high utility on those primary issues while slowly demonstrating flexibility on the lower-weighted ones. I will concede issueF entirely to the opponent's preferred valueC since it has my lowest importance, and maintain my previous positions on the remaining issues to target an overall high utility ~0.88."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "The current time is very early (t=0.08), so I will maintain a relatively high utility target while making a small concession. The opponent has previously shown willingness to accept 'valueA' for issues A, B, and C in different combinations. I will hold firm on my most important issues (A, B, and C) at 'valueA' and make a slight concession on issue D to 'valueB', bringing my total utility to roughly 0.84."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "The opposing strategy shows they have accepted `valueA` for `issueB` across multiple turns, and they have offered `valueB` for `issueD`, `issueE`, and `issueF` in their latest bid. I will reciprocate their suggestion for issues D, E, and F while maintaining my most preferred values for my high-weight components (A, B, and C). Since it is only t=0.10, holding firm on the highest importance issues ensures I target a high overall utility while finding common ground on lower-weight variables."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "The current time fraction is very early (0.12), but the opponent has already made significant concessions on issues A and B, which are highly important to me. I will maintain my highest utilites on issues A, B, and C, but fully concede on issue D (to valueC) to match their recent requests, while keeping issues E and F at mid-level concessions. This gives a high utility of 0.842 to myself while visibly bridging the gap on remaining issues."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "The opponent's most recent offer yields a very high utility of 0.842 by giving me my preferred 'valueA' on the top three heaviest issues (A, B, and C). Since it is still extremely early in the negotiation (t=0.14), I can afford to push for a slightly better outcome by combining their previous concession on issueF ('valueB' at t=0.10 and t=0.12) with their current concessions on issueD and issueE. This allows me to aim for a utility of 0.883 while still showing flexibility on the minor issues."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "The opponent's most recent offer yields a utility of 0.842, providing my most preferred values for my three most critical issues (A, B, and C). Given how highly favorable this is so early in the negotiation, I will accept this offer exactly to lock in the excellent score without risking a retraction of their concessions."
+    }
+  ]
+}

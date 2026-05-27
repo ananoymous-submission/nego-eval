@@ -1,0 +1,122 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At t=0.00, I am targeting a very high-utility opening bid since there is no time pressure to concede yet. The opponent’s initial offer gives me only moderate utility, and their “market standard” message is cheap talk rather than evidence of a constraint, so I will counter with my preferred values across all issues."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "At t=0.02 it is still very early, so I am targeting a high-utility bid rather than accepting the opponent’s low offers, which have not improved for me. The opponent’s messages about authorization and market standards are cheap talk; their latest offer actually reduced my utility. I will make a small concession on the lowest-weight issueD, where they have consistently proposed valueC, while holding firm on the three high-weight issues."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting a very high-utility bid because it is still extremely early at t=0.04 and the opponent’s offers have not improved for me; in fact their utility to me has declined from about 0.44 to 0.35. Their messages about authorization are cheap talk and are contradicted by the fact that they have changed configurations, so I will hold firm on my high-weight issues while avoiding repeating my immediately previous bid."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting a very high utility bid (about 0.961) because it is still very early at t=0.06 and the opponent’s offers have not meaningfully improved for my utility. Their messages claim limited authorization, but the actual offers vary and remain low-value to me, so I treat those claims as cheap talk. I concede only on low-weight issueD, where the opponent repeatedly proposes valueC, while holding firm on the three high-weight issues."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "I am targeting a high-utility bid around 0.92 because it is still very early in the negotiation and the opponent’s offers have not improved for me overall. Their messages claim limits, but the offer history shows shifting configurations rather than a clear constraint, so I treat those claims as cheap talk. I concede only on issueD, my lowest-weight issue, while holding firm on the three high-importance issues."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "I am targeting a very high-utility bid because it is still early at t=0.10 and the opponent’s offers have not improved for me, staying around low-to-mid utility. Their messages about authorization are cheap talk and are contradicted by their changing configurations, so I will concede only on my lowest-weight issueD, where they frequently choose valueC, while holding firm on the three high-weight issues."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "I am targeting a high-utility bid around 0.92 by holding firm on the three high-weight issues while conceding only issueD, which is lowest importance to me. At t=0.12 it is still early, and the opponent’s offers have not shown meaningful concession toward my priorities; their repeated authorization claims are cheap talk and not supported by improving offers."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "I targeted a high-utility bid around 0.96 because it is still early in the negotiation and the opponent’s offers have not shown meaningful concession toward my preferences. Their messages repeatedly claim limits, but their bids vary, so I treat those claims as cheap talk; I concede only on low-weight issueD, where they often propose valueC, while holding firm on the three high-weight issues."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "At t=0.16 it is still early, so I am targeting a high-utility bid around 0.92 rather than making large concessions on the three most important issues. The opponent’s offers remain low-value for me and their “authorization” messages are not supported by meaningful concession behavior, though they do seem to prefer issueD: valueD/C, which is my least important issue. I therefore concede issueD to valueD while holding firm on issueA, issueB, and issueC."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "I targeted a high-utility bid around 0.88, conceding only on issueC and issueD while holding firm on the highly important issueA and issueB. Time is still early at t=0.18, so I should not move close to the opponent’s low-utility offers yet; their repeated “authorization limit” messages are cheap talk and their offers show little real concession."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "I am targeting a still-strong utility of about 0.84 by holding firm on high-weight issueA and issueB while conceding on lower-cost dimensions, especially issueD and partially issueC. At t=0.20 there is no need to accept the opponent’s low-utility offers yet; their messages claim limits, but their actual bids vary and remain only around 0.31–0.45 utility to me, so I treat the “authorization” statements as cheap talk."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "I am targeting a still-strong utility around 0.88 while making a visible concession on issueC and accepting issueD: valueC, since it is low weight for me and appears frequently in the opponent’s offers. The opponent’s latest bid improved substantially for me by moving issueB to valueA, but their repeated “no further authority” messages are not credible because their offers keep changing. At t=0.22 there is still time, so I will hold firm on the high-value issueA and issueB positions while signaling flexibility elsewhere."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "I am still targeting a high-utility bid because we are only at t=0.24, while adding modest concessions on lower-cost dimensions to avoid standing completely firm. The opponent’s offers and messages show repeated claims of limits, but the actual bids fluctuate and do not show consistent concession; their best signal for me was willingness to put issueB at valueA once, while they often push issueD toward valueC/valueD. I will hold my most important positions on issueA and issueB, keep a partial concession on issueC, and concede issueD to valueD."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "I targeted a high-utility bid around 0.88 because we are still early-mid at t=0.26, so there is no need to make a major concession yet. The opponent’s offers and messages repeatedly claim limits, but their actual bids vary and sometimes concede issueB to valueA; I therefore keep my high-weight issues strong while conceding only low-weight issueD to their frequent valueC."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "At t=0.28 I am still targeting a relatively strong utility, but I am starting to concede on lower-cost dimensions rather than holding only my ideal package. The opponent’s actual offers have recently improved on issueB by offering valueA, while they consistently resist my preferred issueC valueB and keep issueD at valueC/valueD; their repeated “authorization” messages are cheap talk, so I rely on the bid pattern instead. I will keep my high-value positions on issueA and issueB, concede issueC to valueC, and give them issueD valueD."
+    },
+    {
+      "t": 0.3,
+      "reasoning": "I am targeting a still-strong utility around 0.81, since t=0.30 is not late enough to concede on the most important issues. The opponent’s offers and repeated “authorization” claims are cheap talk, but their bids suggest they may tolerate issueB: valueA while pushing hard against my preferred issueC, so I concede issueC and low-weight issueD while holding issueA and issueB."
+    },
+    {
+      "t": 0.32,
+      "reasoning": "I am targeting a high utility offer around 0.877, since we are still only at t=0.32 and should not make large concessions yet. The opponent’s actual offers show some movement on issueA and issueB, including the latest offer giving me issueA:valueA, while their repeated “authorization” messages are cheap talk and contradicted by changing bids. I will concede on the lower-importance issueD and partly on issueC while holding firm on the high-weight issueA and issueB."
+    },
+    {
+      "t": 0.34,
+      "reasoning": "I am targeting a solid mid-game utility around 0.77 by holding firm on issueA and issueB, which are high-weight issues for me, while conceding issueC and issueD toward values the opponent has repeatedly offered. At t=0.34 there is still time, so I should not accept their latest 0.62-utility package yet, but their recent movement toward issueB: valueA suggests this counter may be plausible. Their repeated “authorization limit” messages are not reliable because their actual offers have changed substantially over time."
+    },
+    {
+      "t": 0.36,
+      "reasoning": "I am targeting a strong but somewhat more accommodating bid around 0.81 utility, since we are only at t=0.36 and there is no need to collapse to the opponent’s latest package. The opponent’s bids have improved on issueA and sometimes issueB, but they continue to push low outcomes for me on issueC; their repeated “authorization limit” messages are cheap talk and contradicted by their changing offers, so I will concede mainly on issueD and partially on issueC while holding firm on high-value issueA and issueB."
+    },
+    {
+      "t": 0.38,
+      "reasoning": "I am targeting a still-strong utility around 0.77 by holding firm on the high-weight issues A and B while conceding on issueC and the low-weight issueD. At t=0.38 there is some room to concede but no need to collapse to the opponent’s latest offer, especially since their repeated “authorization limit” messages are contradicted by their changing bids. Their recent offers signal willingness to give issueA but continued pressure on issueB/issueC, so I am keeping issueB at my top value and offering movement elsewhere."
+    },
+    {
+      "t": 0.4,
+      "reasoning": "I am targeting a high but moderately concessive utility around 0.81, since we are still only at t=0.40 and should not drop to the opponent’s lower-utility packages yet. The opponent’s recent offers have improved on issueA but remain poor for me on issueC and mixed on issueB, while their authorization claims are contradicted by continued movement, so I treat them as cheap talk. I will hold firm on the two highest-value positions issueA and issueB, while conceding on issueC and the low-weight issueD to explore a tradeoff they may accept."
+    },
+    {
+      "t": 0.42,
+      "reasoning": "I am targeting a strong but not maximal utility bid, preserving my highest-weight priorities on issueA and issueB while conceding on issueC and the low-weight issueD. At t=0.42 there is moderate time pressure, but not enough to accept the opponent’s low-utility latest offer; their messages repeatedly claim limits, but their actual offers have varied, so I treat those claims as cheap talk."
+    },
+    {
+      "t": 0.44,
+      "reasoning": "I am targeting a still-strong utility around 0.85 by holding firm on high-weight issueA and issueB while continuing the mid-game concession on issueC. The opponent’s offers and messages repeatedly claim limits, but the actual bids vary substantially; their latest offer gives issueD: valueA, so I can include that while avoiding repeating my previous exact bid."
+    },
+    {
+      "t": 0.46,
+      "reasoning": "I am targeting a moderate utility around 0.676, conceding on issueB and issueC while holding issueA at my top value because it is high-weight for me. At t=0.46 we are approaching mid-game, so a more credible compromise is warranted; the opponent’s offers have improved into the ~0.5 utility range for me despite repeated “final authorization” messages, so I trust the bidding trend over the cheap talk."
+    },
+    {
+      "t": 0.48,
+      "reasoning": "I am targeting a mid-game utility around 0.68 while making a visible concession on issueB/issueC compared with my ideal bid, since we are near the halfway point but not yet at the deadline. The opponent’s repeated “authorization limit” messages are not credible because their offers keep changing, but their bids suggest they may tolerate issueA:valueA and issueD:valueA while pushing for concessions on issueB and issueC. I avoid repeating my exact previous bid by switching issueB to valueC, which is equally valuable to me as valueB and has appeared often in their offers."
+    },
+    {
+      "t": 0.5,
+      "reasoning": "I am targeting a mid-game utility around 0.78 by conceding on issueC and low-weight issueD while holding firm on high-weight issueA and issueB. The opponent’s offers have improved somewhat for me over time, but their messages repeatedly claim “final authority” despite continued movement, so I trust the bid history rather than the claims. At t=0.50 there is still time, so I will not drop all the way to their latest package yet."
+    },
+    {
+      "t": 0.52,
+      "reasoning": "I am targeting a mid-game utility around 0.68, conceding on issueB and issueC while holding issueA and issueD where this package still preserves strong value for me. The opponent’s offers have gradually improved on issueA and issueD but remain weak for me on issueC, and their repeated “authorization limit” messages are not credible because their bids keep changing."
+    },
+    {
+      "t": 0.54,
+      "reasoning": "I am targeting a utility around 0.70, conceding meaningfully from my ideal while staying above the opponent’s latest offer to me. At t=0.54 we are in the mid-game, so I am giving ground on issueC and issueA while holding issueB and issueD where the opponent has recently shown willingness to offer valueA. The opponent’s repeated “authorization limit” messages are cheap talk; the actual bid history shows movement, especially on issueB and issueD."
+    },
+    {
+      "t": 0.56,
+      "reasoning": "I am targeting a utility around 0.655, which is a meaningful concession from my earlier 0.70-level counter but still comfortably above reservation value. At t=0.56 we are in the mid-game, so I am moving toward a package the opponent has already signaled they can offer, while discounting their repeated “final authorization” messages because their actual bids have continued to change. Their recent history shows willingness to place issueB at valueA and issueD at valueA, so I will preserve those while conceding substantially on issueA and issueC."
+    }
+  ]
+}

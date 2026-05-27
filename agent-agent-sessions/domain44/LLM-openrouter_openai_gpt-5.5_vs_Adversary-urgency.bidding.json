@@ -1,0 +1,66 @@
+{
+  "agent_name": "LLMAgent",
+  "model_name": "openrouter/openai/gpt-5.5",
+  "bids": [
+    {
+      "t": 0.0,
+      "reasoning": "At the opening (t=0.0), I am targeting my maximum-utility bid because there is no time pressure to concede yet. There are no opponent offers or messages to infer their priorities, so I will start with my best values on all issues, including issueD where I am indifferent due to zero weight."
+    },
+    {
+      "t": 0.02,
+      "reasoning": "I am targeting near-max utility because it is extremely early (t=0.02), so there is no reason to make meaningful concessions yet. The opponent’s message uses urgency, but the actual time pressure is minimal; their bid gives me only moderate utility, mainly because it concedes issueE but asks me to give up heavily on issueF and issueB. I will make a small no-cost concession on issueD, which has zero weight for me, while holding firm on my important issues."
+    },
+    {
+      "t": 0.04,
+      "reasoning": "I am targeting near-max utility because it is still very early (t=0.04), and the opponent’s urgency messages are cheap talk not supported by the actual deadline. Their offers have not improved my utility except on issueD, which has zero weight for me, so I will hold firm on high-weight issues while using issueD as a harmless concession point."
+    },
+    {
+      "t": 0.06,
+      "reasoning": "I am targeting my maximum utility on all payoff-relevant issues, using issueD as a costless variation because it has zero weight for me. Since it is still very early (t=0.06), there is no need to concede on high-importance issues, especially because the opponent’s offers have not improved for my utility and their urgency messages are not supported by the actual time remaining."
+    },
+    {
+      "t": 0.08,
+      "reasoning": "At t=0.08 it is still very early, so I am targeting a near-max utility bid and only conceding on issueD, which has zero weight for me. The opponent’s offers have not improved for my utility and their urgency messages are cheap talk inconsistent with the actual early time, so I will hold firm on high-weight issues B, E, and F while matching their latest preference on issueD at no cost."
+    },
+    {
+      "t": 0.1,
+      "reasoning": "At t=0.10 it is still early, so I am targeting a near-maximal utility bid and holding firm on my high-weight issues: issueF, issueE, and issueB. The opponent’s offers remain low-value for me and show little real concession despite urgent messages, so I am only varying the zero-weight issueD rather than conceding on important issues."
+    },
+    {
+      "t": 0.12,
+      "reasoning": "I am targeting a very high-utility bid around 0.966 by conceding only on low-weight issueA while holding firm on the high-importance issues F, B, and E. Since the real time is still early at t=0.12, the opponent’s urgency messages are not persuasive, but their offers suggest they strongly prefer issueA away from valueC and consistently accept issueE: valueA. Their latest offer improved on issueF from valueA to valueB, so I will reciprocate modestly without giving up my most valuable terms."
+    },
+    {
+      "t": 0.14,
+      "reasoning": "At t=0.14 it is still early, so I am targeting a high-utility bid for myself while making concessions on lower-importance issues. The opponent’s messages repeatedly claim urgency, but the actual time is low and their bids have not consistently improved for me, so I discount the pressure tactics and mainly concede on issueA and issueD while holding firm on issueB, issueE, and issueF."
+    },
+    {
+      "t": 0.16,
+      "reasoning": "I am targeting a high-utility bid around 0.82 because we are still early at t=0.16, so there is no need to accept the opponent’s urgency claims. The opponent has mostly held firm on issueC and issueF against my interests, while issueE aligns well; I am conceding only on lower-weight issueA and zero-weight issueD while protecting high-weight issueF, issueB, and issueE."
+    },
+    {
+      "t": 0.18,
+      "reasoning": "I am targeting a still-strong utility around 0.74 by conceding mainly on lower-weight issues A and C while holding my high-weight priorities B, E, and F. At t=0.18 it is still early enough not to accept the opponent’s low-utility offers, and their repeated bids/messages show urgency claims but only limited real concession, with consistent pressure for issueC=valueA and issueA=valueB/valueA."
+    },
+    {
+      "t": 0.2,
+      "reasoning": "I am targeting a utility around 0.74, conceding on lower-impact issues A and C while holding firm on the most valuable issues F, E, and B this early at t=0.20. The opponent’s offers have not shown consistent concession and their urgency messages are cheap talk given the actual time remaining, so I should not drop major value yet. I vary the zero-weight issueD to avoid simply repeating my last bid while keeping the same substantive tradeoff."
+    },
+    {
+      "t": 0.22,
+      "reasoning": "I am targeting a still-profitable utility around 0.61 by conceding on issueB, issueA, issueC, and issueD while holding firm on the highest-value issues for me, especially issueF and issueE. At t=0.22 it is still early enough not to accept the opponent’s low-utility bids or their repeated urgency messages at face value, but their offers consistently signal interest in issueB: valueB, issueC: valueA, and issueA: valueB/valueA, so I am moving toward those on lower-cost dimensions."
+    },
+    {
+      "t": 0.24,
+      "reasoning": "I am targeting a utility around 0.68 by holding firm on my highest-weight issueF and mutually favorable issueE, while conceding on lower/mid-weight issues where the opponent has consistently signaled preferences, especially issueB and issueC. At t=0.24 there is still time, so I should not accept the opponent’s urgency messages at face value, but I can make a meaningful movement toward their latest valid offer. Their bids mostly cluster around issueB=valueB, issueC low-to-mid values, and issueF away from my ideal, so I am offering a compromise that preserves my core value on issueF."
+    },
+    {
+      "t": 0.26,
+      "reasoning": "At t=0.26 it is still early enough to avoid major concessions, so I am targeting a solid utility around 0.64 while varying from my previous bid. The opponent’s offers remain low for me and their urgency messages are not credible given the actual time; however, they repeatedly choose issueA/issueC lower values and issueD valueA, so I can concede on those lower-weight or zero-weight areas while holding firm on issueE and especially issueF."
+    },
+    {
+      "t": 0.28,
+      "reasoning": "I am targeting a utility around 0.66, keeping my highest-weight issueF at valueC and issueE at valueA while conceding on lower-weight issueC and the zero-weight issueD. The opponent’s repeated urgency messages are not credible at t=0.28, but their offers consistently signal interest in issueA/valueA, issueC/valueA, and issueD/valueA, so I move on those while preserving the most valuable terms."
+    }
+  ]
+}
