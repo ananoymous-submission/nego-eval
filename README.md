@@ -19,6 +19,8 @@ Prior work concluded that LLMs are weak negotiators. We revisit that claim with 
 
 ### Tournament — top of the leaderboard (paper Table 3)
 
+<div align="center">
+
 | Agent | Self-Utility | Nash Distance | Acceptance |
 |---|---:|---:|---:|
 | **Gemini Pro 3.1** *(LRM)* | **0.71 ± 0.20** | 0.19 | 0.96 |
@@ -30,9 +32,13 @@ Prior work concluded that LLMs are weak negotiators. We revisit that claim with 
 | **GPT-4o** *(non-reasoning)* | 0.52 ± 0.41 | 0.53 | 0.65 |
 | HardHeaded | 0.52 ± 0.47 | 0.68 | 0.58 |
 
+</div>
+
 **Three of the top five agents are LRMs; the non-reasoning baseline sits at the bottom on every metric.** 
 
 ### Adversarial robustness — acceptance under six attack personas (paper Table 4)
+
+<div align="center">
 
 | Persona | GPT-4o | GPT-5.5 | Gemini Pro 3.1 | Opus 4.7 |
 |---|---:|---:|---:|---:|
@@ -41,9 +47,13 @@ Prior work concluded that LLMs are weak negotiators. We revisit that claim with 
 | Fabricated Constraints | **0.94 ↑** | 1.00 | 1.00 | 1.00 |
 | Prompt Injection | **0.87 ↑** | 1.00 | 1.00 | 1.00 |
 
+</div>
+
 **Reasoning models hold near-perfect acceptance under every attack; the non-reasoning baseline is pressured into accepting offers it would otherwise refuse.**
 
 ### Human-agent study — 108 participants (paper Table 6)
+
+<div align="center">
 
 | Metric | Hybrid *(classical)* | Gemini *(LRM)* |
 |---|---:|---:|
@@ -51,6 +61,8 @@ Prior work concluded that LLMs are weak negotiators. We revisit that claim with 
 | Opponent Utility | 0.40 ± 0.14 | 0.43 ± 0.14 |
 | Round | 6.28 ± 4.46 | **5.43 ± 3.47** † |
 | Acceptance Rate | 0.95 | **0.98** |
+
+</div>
 
 **<sub>† statistically significant (p < 0.01).</sub>**
 
